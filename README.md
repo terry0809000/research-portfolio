@@ -10,7 +10,7 @@ I'm **Tianyi Yu**. I work across clinical language, biomedical imaging and predi
 
 This is where I share the code behind those questions. Pick a project, look under the hood, and try it with your own questions. I'd love to hear what you find.
 
-**42 research projects · 6 connected directions**
+**52 research projects · 6 connected directions**
 
 [Clinical NLP](#clinical-nlp) · [Computer Vision & Biomedical Imaging](#biomedical-imaging) · [Trustworthy AI](#trustworthy-ai) · [Prediction Modelling](#prediction-modelling) · [Health Informatics](#health-informatics) · [AI for Health](#ai-for-health)
 
@@ -97,6 +97,10 @@ A strong headline metric is only the beginning. These projects examine calibrati
 | **[Outcome ascertainment and transportability in ICU prediction](https://github.com/terry0809000/icu-outcome-ascertainment)**<br>[Guide](pipelines/icu-outcome-ascertainment.md) | How do endpoint recording and observation timing change ICU model evaluation? |
 | **[Clinical prediction uncertainty and identification](https://github.com/terry0809000/clinical-uncertainty-identification)**<br>[Guide](pipelines/clinical-uncertainty-identification.md) | Which clinical prediction conclusions can the available evidence identify? |
 | **[Universal preservation under stochastic transformations](https://github.com/terry0809000/universal-preservation-theory)**<br>[Guide](pipelines/universal-preservation-theory.md) | When does a shared stochastic observation preserve decision order? |
+| **[Fixed-target forecast revisions under sensor outages](https://github.com/terry0809000/fixed-target-forecast-revisions)**<br>[Guide](pipelines/fixed-target-forecast-revisions.md) | How should a fixed-target forecast change when sensor messages arrive late? |
+| **[ChronoShield-ICU count-matched temporal evaluation](https://github.com/terry0809000/chronoshield-icu)**<br>[Guide](pipelines/chronoshield-icu.md) | Do clinical timing features add information after measurement counts are matched? |
+| **[Relative and absolute augmentation gains under observation loss](https://github.com/terry0809000/clinical-observation-loss-augmentation)**<br>[Guide](pipelines/clinical-observation-loss-augmentation.md) | Does an augmentation gain remain meaningful when absolute predictive performance falls under observation loss? |
+| **[Source-only clinical model selection under missingness stress](https://github.com/terry0809000/ehr-missingness-model-selection)**<br>[Guide](pipelines/ehr-missingness-model-selection.md) | Do missingness stress tests change source-only model selection, or do competing rules choose the same candidate? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -120,6 +124,8 @@ Predictions live in time. I study how clinical models behave when the population
 | **[Stability and clinical interpretation of kidney risk models](https://github.com/terry0809000/nhanes-kidney-risk-stability)**<br>[Guide](pipelines/nhanes-kidney-risk-stability.md) | How stable and clinically interpretable are kidney risk models? |
 | **[Incremental prediction of hypernatremia](https://github.com/terry0809000/hypernatremia-incremental-prediction)**<br>[Guide](pipelines/hypernatremia-incremental-prediction.md) | What does a model add beyond routine sodium measurements? |
 | **[Incremental value of vasopressor prediction](https://github.com/terry0809000/vasopressor-incremental-value)**<br>[Guide](pipelines/vasopressor-incremental-value.md) | Do disease-specific treatment patterns add useful mortality predictions? |
+| **[Dynamic major adverse kidney-event prediction in T2DM and CKD](https://github.com/terry0809000/t2dm-ckd-dynamic-kidney-risk)**<br>[Guide](pipelines/t2dm-ckd-dynamic-kidney-risk.md) | How does kidney-event prediction change across clinical landmarks when follow-up and cohort eligibility remain explicit? |
+| **[AKI progression: transportability and model updating](https://github.com/terry0809000/aki-progression-transportability)**<br>[Guide](pipelines/aki-progression-transportability.md) | What changes when an AKI progression model moves between clinical databases and requires local updating? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -136,6 +142,8 @@ How we collect data is part of the story. These workflows connect measurement, a
 | **[Temporal measurement and source availability benchmark](https://github.com/terry0809000/icu-temporal-measurement-benchmark)**<br>[Guide](pipelines/icu-temporal-measurement-benchmark.md) | How does measurement timing and source availability shape retrospective ICU evaluation? |
 | **[Eating disorder dynamics across everyday moments](https://github.com/terry0809000/eatingdisordermlvar)**<br>[Guide](pipelines/eatingdisordermlvar.md) | How do eating-related symptoms, affect and maladaptive exercise connect across EMA surveys? |
 | **[Healthcare affordability and testing gaps](https://github.com/terry0809000/nhis-affordability-testing-gaps)**<br>[Guide](pipelines/nhis-affordability-testing-gaps.md) | When care costs too much, who misses a test? |
+| **[Availability-aware EHR modelling](https://github.com/terry0809000/ash-ehr-availability)**<br>[Guide](pipelines/ash-ehr-availability.md) | What changes when a clinical model can use only the information actually available at prediction time? |
+| **[Laboratory documentation counts and retrospective recording rules](https://github.com/terry0809000/icu-documentation-counts)**<br>[Guide](pipelines/icu-documentation-counts.md) | When does a laboratory documentation count reflect recording rules rather than a distinct clinical measurement? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -154,6 +162,8 @@ From molecular variation to sleep and movement, I build tools to explore health 
 | **[Preprocessing sensitivity of glomerular BEX3 prioritisation](https://github.com/terry0809000/dkd-bex3-preprocessing)**<br>[Guide](pipelines/dkd-bex3-preprocessing.md) | How sensitive is glomerular BEX3 prioritisation to preprocessing choices? |
 | **[Adaptive versus fixed smartwatch task acquisition](https://github.com/terry0809000/pads-adaptive-acquisition)**<br>[Guide](pipelines/pads-adaptive-acquisition.md) | How does adaptive smartwatch task acquisition compare with fixed acquisition? |
 | **[Selective review and total sleep time estimation](https://github.com/terry0809000/sleep-duration-selective-review)**<br>[Guide](pipelines/sleep-duration-selective-review.md) | Which sleep epochs deserve review when estimating total sleep time? |
+| **[ECG reliability screening with fixed calibration](https://github.com/terry0809000/earlybird-ecg-reliability)**<br>[Guide](pipelines/earlybird-ecg-reliability.md) | Can fixed calibration recognize perturbed ECG inputs without mistaking simulated labels for clinical quality? |
+| **[Objective physiological phenotyping: Sleep-EDF module](https://github.com/terry0809000/objective-physiological-phenotyping)**<br>[Guide](pipelines/objective-physiological-phenotyping.md) | What can objective sleep architecture reveal without turning physiological disruption into a psychiatric label? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
