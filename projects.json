@@ -280,11 +280,16 @@
   {
     "repo": "icu-specification-sensitivity",
     "title": "Specification sensitivity in retrospective ICU evaluation",
-    "area": "Prediction Modelling",
+    "area": "Trustworthy AI",
     "question": "How do analysis specifications change retrospective ICU evaluation?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Credentialed MIMIC-IV/eICU source tables; all patient-level products remain private.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "original_domain": "Prediction Modelling",
+    "secondary_areas": [
+      "Prediction Modelling"
+    ],
+    "classification_note": "Analysis-specification sensitivity and retrospective prediction evaluation"
   },
   {
     "repo": "nhanes-kidney-risk-stability",
@@ -490,11 +495,16 @@
   {
     "repo": "clinical-observation-loss-augmentation",
     "title": "Relative and absolute augmentation gains under observation loss",
-    "area": "Trustworthy AI",
+    "area": "AI for Health",
     "question": "Does an augmentation gain remain meaningful when absolute predictive performance falls under observation loss?",
     "methods": "PhysioNet source-only fitting, explicit observation masking and locked held-out augmentation comparisons.",
     "access": "Public PhysioNet Challenge 2012 and 2019 source inputs; acquire raw files separately and retain the original source splits.",
-    "boundary": "Relative gains must be read alongside absolute performance; controlled observation loss does not establish real hospital outage behaviour."
+    "boundary": "Relative gains must be read alongside absolute performance; controlled observation loss does not establish real hospital outage behaviour.",
+    "original_domain": "Trustworthy AI",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Health time-series augmentation under controlled observation loss"
   },
   {
     "repo": "ehr-missingness-model-selection",
