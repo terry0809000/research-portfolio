@@ -1,0 +1,119 @@
+[
+  {
+    "repo": "trace-fib-pipeline",
+    "title": "TRACE-Fib",
+    "area": "Computational biology",
+    "question": "How do normalization and study weighting affect cross-organ transfer?",
+    "methods": "Frozen open-data inputs, study-aware evaluation and sensitivity analysis.",
+    "access": "CPU · public deposit",
+    "boundary": "A bounded retrospective reanalysis; nominal source units are not independently verified people."
+  },
+  {
+    "repo": "beyond-macro-f1-pubmed-rct-public",
+    "title": "Beyond Macro-F1",
+    "area": "Biomedical NLP",
+    "question": "Does better classification imply better calibration and perturbation consistency?",
+    "methods": "Sanitized benchmark code, result provenance and versioned evidence.",
+    "access": "Public code + versioned evidence",
+    "boundary": "A benchmark comparison does not establish clinical utility."
+  },
+  {
+    "repo": "ham10000-trustworthy-skin-ai",
+    "title": "Selective skin-lesion referral",
+    "area": "Medical imaging",
+    "question": "How do calibration and abstention change model evaluation?",
+    "methods": "Lesion-level splitting, temperature scaling, risk–coverage analysis and subgroup audits.",
+    "access": "Python · acquire source images",
+    "boundary": "Related-domain checks do not constitute prospective clinical validation."
+  },
+  {
+    "repo": "ards-ahrf-ehr-temporal-validation",
+    "title": "ARDS / AHRF temporal validation",
+    "area": "Clinical prediction",
+    "question": "How does model performance change across time and ICU databases?",
+    "methods": "Time-indexed EHR modelling, site shift, calibration and missingness audits.",
+    "access": "Credentialed MIMIC-IV / eICU",
+    "boundary": "Research software; patient-level inputs stay in the authorized environment."
+  },
+  {
+    "repo": "zuco2-scientific-ml-pipeline",
+    "title": "Reading dynamics with ZuCo 2.0",
+    "area": "Cognitive data science",
+    "question": "Can lexical and early-fixation features predict later processing load?",
+    "methods": "An installable package for HDF5 extraction, grouped evaluation and reproducible configurations.",
+    "access": "Python package · acquire ZuCo",
+    "boundary": "Grouped benchmark performance does not establish a general cognitive mechanism."
+  },
+  {
+    "repo": "bmc-dm-prediction-one-week",
+    "title": "Respiratory surveillance",
+    "area": "Public health",
+    "question": "Can aggregate surveillance signals anticipate next-week escalation?",
+    "methods": "Rolling-origin validation, chronological holdout and state-cluster uncertainty.",
+    "access": "CPU · public aggregate surveillance",
+    "boundary": "A later holdout within one surveillance ecosystem is not external validation."
+  },
+  {
+    "repo": "nhanes-temporal-diabetes-screening",
+    "title": "Temporal screening evaluation",
+    "area": "Clinical prediction",
+    "question": "Does model complexity improve probability estimation under temporal shift?",
+    "methods": "Survey-weighted evaluation, calibration and a prespecified complexity-value gate.",
+    "access": "Python · public-use NHANES",
+    "boundary": "The complexity-value gate failed; one HbA1c measurement is not confirmed diabetes."
+  },
+  {
+    "repo": "copd-asthma-extubation-transportability",
+    "title": "Extubation transportability",
+    "area": "Clinical prediction",
+    "question": "How does endpoint construction affect cross-database transport?",
+    "methods": "Endpoint reconstruction, source-only transport and calibration diagnostics.",
+    "access": "Credentialed MIMIC-IV / eICU",
+    "boundary": "Endpoint repair and external validation do not establish clinical readiness."
+  },
+  {
+    "repo": "aki-dynamic-prediction-deployment-gated",
+    "title": "Dynamic AKI prediction",
+    "area": "Clinical prediction",
+    "question": "How do temporal renal models behave under external transport?",
+    "methods": "Dynamic prediction, alert thresholds and deployment constraints.",
+    "access": "Credentialed clinical data",
+    "boundary": "Discrimination, calibration and patient benefit are distinct questions."
+  },
+  {
+    "repo": "biomedical-abstract-sentence-classification",
+    "title": "Cross-corpus abstract classification",
+    "area": "Biomedical NLP",
+    "question": "How do lightweight sentence classifiers transfer between corpora?",
+    "methods": "Split-aware preprocessing, calibration and cross-corpus evaluation.",
+    "access": "CPU · public text corpora",
+    "boundary": "Read version-specific evidence; the local revision can be newer than the public release."
+  },
+  {
+    "repo": "sleepingedf",
+    "title": "Sleep-EDF staging",
+    "area": "Physiological signals",
+    "question": "How do local context, channel choice and smoothing affect sleep staging?",
+    "methods": "Record-aware evaluation, channel ablations and repeated-seed comparisons.",
+    "access": "Acquire Sleep-EDF",
+    "boundary": "Sequence smoothing can trade off different metrics; preserve record boundaries."
+  },
+  {
+    "repo": "hatespeechcheck",
+    "title": "Rationale reliability audit",
+    "area": "Responsible NLP",
+    "question": "Do supporting rationales remain faithful and robust?",
+    "methods": "Rationale evaluation, calibration, functional checks and subgroup diagnostics.",
+    "access": "Python · acquire benchmark data",
+    "boundary": "Benchmark audits do not certify fairness or suitability for automated moderation."
+  },
+  {
+    "repo": "safelabs-icu-lab-deferral",
+    "title": "SAFE-LABS",
+    "area": "Research methods",
+    "question": "How can a selective-prediction policy be tested without overstating safety?",
+    "methods": "Protocol, synthetic fixtures and exploratory empirical adapters.",
+    "access": "Synthetic validation / protocol",
+    "boundary": "Empirical outputs remain outside the public release pending named disclosure review."
+  }
+]

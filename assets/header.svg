@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+<title id="title">From question to pipeline.</title><desc id="desc">Research software with explicit inputs, evaluation and limitations. Decorative geometric motif; not a data visualization.</desc>
+<rect width="1280" height="360" rx="16" fill="#101E2D"/>
+<g fill="none" stroke="#294155" stroke-width="1"><circle cx="1120" cy="174" r="152"/><circle cx="1120" cy="174" r="112"/><circle cx="1120" cy="174" r="72"/><path d="M930 174h350M1120 0v360"/></g>
+<g fill="#75D5CA"><circle cx="1008" cy="174" r="5"/><circle cx="1120" cy="62" r="5"/><circle cx="1192" cy="174" r="5"/></g>
+<rect x="60" y="58" width="38" height="4" rx="2" fill="#75D5CA"/>
+<g font-family="Arial, Helvetica, sans-serif"><text x="60" y="99" fill="#92B4C8" font-size="18" letter-spacing="3">SELECTED WORK / TIANYI YU</text>
+<text x="56" y="188" fill="#F4F8FC" font-size="66" font-weight="700">From question to pipeline.</text>
+<text x="60" y="240" fill="#C2D2DE" font-size="24">Research software with explicit inputs, evaluation and limitations</text>
+<text x="60" y="309" fill="#75D5CA" font-size="15" letter-spacing="2">RESEARCH SOFTWARE / OPEN METHODS / REPRODUCIBLE EVIDENCE</text></g></svg>
