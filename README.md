@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/ai-for-health-scientific-cover.png" width="100%" alt="For the people behind the data — Tianyi Yu" /></p>
 
-[Visit my website](https://terry0809000.github.io/research-portfolio/) · [Meet me](https://github.com/terry0809000) · [Google Scholar](https://scholar.google.com/citations?user=m8F5KU8AAAAJ) · [ORCID](https://orcid.org/0009-0009-0311-4015)
+[Visit my website](https://terry0809000.github.io/) · [Meet me](https://github.com/terry0809000) · [Google Scholar](https://scholar.google.com/citations?user=m8F5KU8AAAAJ) · [ORCID](https://orcid.org/0009-0009-0311-4015)
 
 A clinical note holds someone's story. An image can carry a clue that is easy to miss. A risk score may shape what happens next.
 
@@ -10,7 +10,7 @@ I'm **Tianyi Yu**. I work across clinical language, biomedical imaging and predi
 
 This is where I share the code behind those questions. Pick a project, look under the hood, and try it with your own questions. I'd love to hear what you find.
 
-**33 research projects · 6 connected directions**
+**42 research projects · 6 connected directions**
 
 [Clinical NLP](#clinical-nlp) · [Computer Vision & Biomedical Imaging](#biomedical-imaging) · [Trustworthy AI](#trustworthy-ai) · [Prediction Modelling](#prediction-modelling) · [Health Informatics](#health-informatics) · [AI for Health](#ai-for-health)
 
@@ -47,6 +47,8 @@ Choose a direction below. **Project titles open the repository; “Guide” open
 
 <!-- PROJECT_INDEX_START -->
 
+## Explore the projects
+
 <a id="clinical-nlp"></a>
 
 ### Clinical NLP
@@ -73,6 +75,8 @@ Looking for useful signals in medical images—and asking how image selection an
 | **[Selective skin-lesion referral](https://github.com/terry0809000/ham10000-trustworthy-skin-ai)**<br>[Guide](pipelines/ham10000-trustworthy-skin-ai.md) | How do calibration and abstention change model evaluation? |
 | **[Excision selection and melanoma assessment](https://github.com/terry0809000/melanoma-excision-selection)**<br>[Guide](pipelines/melanoma-excision-selection.md) | How does excision selection affect melanoma assessment? |
 | **[MRI and clinical prediction of pathological complete response](https://github.com/terry0809000/breast-mri-response-prediction)**<br>[Guide](pipelines/breast-mri-response-prediction.md) | What can MRI and clinical information tell us about pathological complete response? |
+| **[Color-response sensitivity for pathology error screening](https://github.com/terry0809000/cvpath-color-response-screening)**<br>[Guide](pipelines/cvpath-color-response-screening.md) | Can stain-perturbation responses help screen pathology classification errors? |
+| **[MRI calibration-noise analysis](https://github.com/terry0809000/mri-calibration-noise)**<br>[Guide](pipelines/mri-calibration-noise.md) | How does sensitivity-map calibration carry added noise into MRI reconstruction? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -90,6 +94,9 @@ A strong headline metric is only the beginning. These projects examine calibrati
 | **[Patient reuse and apparent transcriptomic diagnostic performance](https://github.com/terry0809000/transcriptomic-patient-reuse)**<br>[Guide](pipelines/transcriptomic-patient-reuse.md) | How does patient reuse affect apparent transcriptomic diagnostic performance? |
 | **[Source information limits in synthetic validation](https://github.com/terry0809000/synthetic-validation-source-limits)**<br>[Guide](pipelines/synthetic-validation-source-limits.md) | What can synthetic validation establish when source information is limited? |
 | **[False positives and sample reuse in pulmonary-nodule assessment](https://github.com/terry0809000/pulmonary-nodule-transcriptomic-audit)**<br>[Guide](pipelines/pulmonary-nodule-transcriptomic-audit.md) | How do false positives and sample reuse affect pulmonary-nodule assessment? |
+| **[Outcome ascertainment and transportability in ICU prediction](https://github.com/terry0809000/icu-outcome-ascertainment)**<br>[Guide](pipelines/icu-outcome-ascertainment.md) | How do endpoint recording and observation timing change ICU model evaluation? |
+| **[Clinical prediction uncertainty and identification](https://github.com/terry0809000/clinical-uncertainty-identification)**<br>[Guide](pipelines/clinical-uncertainty-identification.md) | Which clinical prediction conclusions can the available evidence identify? |
+| **[Universal preservation under stochastic transformations](https://github.com/terry0809000/universal-preservation-theory)**<br>[Guide](pipelines/universal-preservation-theory.md) | When does a shared stochastic observation preserve decision order? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -111,6 +118,8 @@ Predictions live in time. I study how clinical models behave when the population
 | **[Sepsis-to-shock temporal prediction](https://github.com/terry0809000/sepsis-shock-ai-medicine-v9)**<br>[Guide](pipelines/sepsis-shock-ai-medicine-v9.md) | How does temporal landmark modelling transport across ICU databases? |
 | **[Specification sensitivity in retrospective ICU evaluation](https://github.com/terry0809000/icu-specification-sensitivity)**<br>[Guide](pipelines/icu-specification-sensitivity.md) | How do analysis specifications change retrospective ICU evaluation? |
 | **[Stability and clinical interpretation of kidney risk models](https://github.com/terry0809000/nhanes-kidney-risk-stability)**<br>[Guide](pipelines/nhanes-kidney-risk-stability.md) | How stable and clinically interpretable are kidney risk models? |
+| **[Incremental prediction of hypernatremia](https://github.com/terry0809000/hypernatremia-incremental-prediction)**<br>[Guide](pipelines/hypernatremia-incremental-prediction.md) | What does a model add beyond routine sodium measurements? |
+| **[Incremental value of vasopressor prediction](https://github.com/terry0809000/vasopressor-incremental-value)**<br>[Guide](pipelines/vasopressor-incremental-value.md) | Do disease-specific treatment patterns add useful mortality predictions? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -126,6 +135,7 @@ How we collect data is part of the story. These workflows connect measurement, a
 | **[Six-hour ICU laboratory prediction](https://github.com/terry0809000/icu-six-hour-lab-prediction)**<br>[Guide](pipelines/icu-six-hour-lab-prediction.md) | What can routinely collected intensive care data tell us about laboratory measurements six hours ahead? |
 | **[Temporal measurement and source availability benchmark](https://github.com/terry0809000/icu-temporal-measurement-benchmark)**<br>[Guide](pipelines/icu-temporal-measurement-benchmark.md) | How does measurement timing and source availability shape retrospective ICU evaluation? |
 | **[Eating disorder dynamics across everyday moments](https://github.com/terry0809000/eatingdisordermlvar)**<br>[Guide](pipelines/eatingdisordermlvar.md) | How do eating-related symptoms, affect and maladaptive exercise connect across EMA surveys? |
+| **[Healthcare affordability and testing gaps](https://github.com/terry0809000/nhis-affordability-testing-gaps)**<br>[Guide](pipelines/nhis-affordability-testing-gaps.md) | When care costs too much, who misses a test? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -143,6 +153,7 @@ From molecular variation to sleep and movement, I build tools to explore health 
 | **[Sleep-EDF staging](https://github.com/terry0809000/sleepingedf)**<br>[Guide](pipelines/sleepingedf.md) | How do local context, channel choice and smoothing affect sleep staging? |
 | **[Preprocessing sensitivity of glomerular BEX3 prioritisation](https://github.com/terry0809000/dkd-bex3-preprocessing)**<br>[Guide](pipelines/dkd-bex3-preprocessing.md) | How sensitive is glomerular BEX3 prioritisation to preprocessing choices? |
 | **[Adaptive versus fixed smartwatch task acquisition](https://github.com/terry0809000/pads-adaptive-acquisition)**<br>[Guide](pipelines/pads-adaptive-acquisition.md) | How does adaptive smartwatch task acquisition compare with fixed acquisition? |
+| **[Selective review and total sleep time estimation](https://github.com/terry0809000/sleep-duration-selective-review)**<br>[Guide](pipelines/sleep-duration-selective-review.md) | Which sleep epochs deserve review when estimating total sleep time? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
