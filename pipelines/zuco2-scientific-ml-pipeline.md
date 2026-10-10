@@ -1,5 +1,10 @@
 # Reading dynamics with ZuCo 2.0
 
+**Portfolio home:** Clinical NLP  
+**Related direction:** AI for Health  
+**Cross-subject scope:** Reading, lexical features and eye tracking; not a clinical cohort.
+
+
 **Cognitive data science** · Python package · acquire ZuCo
 
 ## The question
