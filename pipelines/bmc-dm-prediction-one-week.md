@@ -1,5 +1,10 @@
 # Respiratory surveillance
 
+**Portfolio home:** Health Informatics  
+**Related direction:** AI for Health  
+**Cross-subject scope:** Public-health surveillance and rolling forecasts.
+
+
 **Public health** · CPU · public aggregate surveillance
 
 ## The question
