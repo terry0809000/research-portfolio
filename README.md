@@ -4,14 +4,16 @@
 
 A curated map of my research software, organized by scientific question. Each entry links to a pipeline and explains its data requirements and interpretation boundary. This is a software portfolio, not a publication list.
 
-## Start here
+## Research directions
 
-| Interest | Suggested entry |
+| Direction | Representative pipeline |
 |:--|:--|
-| Reproduce a bounded public-data analysis | [TRACE-Fib](https://github.com/terry0809000/trace-fib-pipeline) |
-| Inspect calibration beyond headline accuracy | [Beyond Macro-F1](https://github.com/terry0809000/beyond-macro-f1-pubmed-rct-public) |
-| Explore an installable research package | [ZuCo 2.0](https://github.com/terry0809000/zuco2-scientific-ml-pipeline) |
-| Study cross-database clinical validation | [ARDS / AHRF](https://github.com/terry0809000/ards-ahrf-ehr-temporal-validation) |
+| **Clinical NLP** | [Beyond Macro-F1](https://github.com/terry0809000/beyond-macro-f1-pubmed-rct-public) · [Cross-corpus abstract classification](pipelines/biomedical-abstract-sentence-classification.md) |
+| **Computer Vision & Biomedical Imaging** | [Selective skin-lesion referral](https://github.com/terry0809000/ham10000-trustworthy-skin-ai) |
+| **Trustworthy AI** | [Calibration and consistency](pipelines/beyond-macro-f1-pubmed-rct-public.md) · [Representation sensitivity](pipelines/trace-fib-pipeline.md) |
+| **Prediction Modelling** | [ARDS / AHRF](pipelines/ards-ahrf-ehr-temporal-validation.md) · [Temporal screening](pipelines/nhanes-temporal-diabetes-screening.md) |
+| **Health Informatics** | [Dynamic AKI prediction](pipelines/aki-dynamic-prediction-deployment-gated.md) · [SAFE-LABS](pipelines/safelabs-icu-lab-deferral.md) |
+| **AI for Health** | [Respiratory surveillance](pipelines/bmc-dm-prediction-one-week.md) · [Sleep staging](pipelines/sleepingedf.md) |
 
 ## Pipeline index
 
