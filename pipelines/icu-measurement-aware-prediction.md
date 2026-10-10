@@ -1,5 +1,10 @@
 # Measurement-aware retrospective ICU prediction
 
+**Portfolio home:** Health Informatics  
+**Related direction:** Prediction Modelling  
+**Cross-subject scope:** Clinical measurement processes and retrospective EHR prediction.
+
+
 **Prediction Modelling** · Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private.
 
 ## The question
