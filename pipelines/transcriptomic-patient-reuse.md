@@ -2,6 +2,11 @@
 
 # Patient reuse and apparent transcriptomic diagnostic performance
 
+**Portfolio home:** AI for Health  
+**Related direction:** Trustworthy AI  
+**Cross-subject scope:** Transcriptomic diagnostics and patient-reuse evaluation.
+
+
 **Trustworthy AI**
 
 ## The question
