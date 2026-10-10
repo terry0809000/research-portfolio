@@ -376,5 +376,95 @@
     "methods": "Multicoil calibration-noise probes, descriptive replication and finite-difference diagnostics.",
     "access": "Public source MRI releases and fixed development/evaluation splits, as specified in the original code.",
     "boundary": "Added identity-covariance noise around noisy measured data does not estimate native scanner covariance or establish clinical generality."
+  },
+  {
+    "repo": "fixed-target-forecast-revisions",
+    "title": "Fixed-target forecast revisions under sensor outages",
+    "area": "Trustworthy AI",
+    "question": "How should a fixed-target forecast change when sensor messages arrive late?",
+    "methods": "Fixed-target time-series revisions, simulated message outages and descriptive paired actual-label losses.",
+    "access": "Public source ETT and forecasting inputs; simulated outages do not represent observed infrastructure failures.",
+    "boundary": "Repeated targets and correlated origins are not independent replications; simulated outages are not observed infrastructure failures."
+  },
+  {
+    "repo": "earlybird-ecg-reliability",
+    "title": "ECG reliability screening with fixed calibration",
+    "area": "AI for Health",
+    "question": "Can fixed calibration recognize perturbed ECG inputs without mistaking simulated labels for clinical quality?",
+    "methods": "Fixed calibration, patient-held-out perturbation screening and staged ECG test acquisition.",
+    "access": "PTB-XL and NSTDB source releases; acquire source waveforms and any noise inputs separately.",
+    "boundary": "Injected perturbation labels are not clinician-certified signal quality; source-only reproduction requires separately acquired original manifests."
+  },
+  {
+    "repo": "ash-ehr-availability",
+    "title": "Availability-aware EHR modelling",
+    "area": "Health Informatics",
+    "question": "What changes when a clinical model can use only the information actually available at prediction time?",
+    "methods": "Availability-aware EHR replay, frozen extraction and patient-clustered policy comparisons.",
+    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Patient rows, labels, predictions and models remain private.",
+    "boundary": "Credentialed inputs and genuine original review/freeze artifacts are required separately; clinical deployment is not established."
+  },
+  {
+    "repo": "icu-documentation-counts",
+    "title": "Laboratory documentation counts and retrospective recording rules",
+    "area": "Health Informatics",
+    "question": "When does a laboratory documentation count reflect recording rules rather than a distinct clinical measurement?",
+    "methods": "First-availability lab recording rules, portable raw-archive cohort construction and fixed private aggregate analyses.",
+    "access": "Credentialed eICU/MIMIC archives. Follow the original first-availability, split and local disclosure contracts.",
+    "boundary": "Recording counts are not independent biological measurements; real archive reproduction and linked disclosure review are separate gates."
+  },
+  {
+    "repo": "chronoshield-icu",
+    "title": "ChronoShield-ICU count-matched temporal evaluation",
+    "area": "Trustworthy AI",
+    "question": "Do clinical timing features add information after measurement counts are matched?",
+    "methods": "Count-matched ICU temporal views, source-derived cohort construction and staged fixed-model evaluation.",
+    "access": "Credentialed MIMIC-IV/eICU archives; keep extracted records and individual outputs private.",
+    "boundary": "Retrospective timing can reflect care processes; fresh extraction and model review gates are required."
+  },
+  {
+    "repo": "t2dm-ckd-dynamic-kidney-risk",
+    "title": "Dynamic major adverse kidney-event prediction in T2DM and CKD",
+    "area": "Prediction Modelling",
+    "question": "How does kidney-event prediction change across clinical landmarks when follow-up and cohort eligibility remain explicit?",
+    "methods": "Landmark MAKE endpoints, gated model development, competing-event sensitivities and frozen external evaluation.",
+    "access": "Credentialed MIMIC-IV and eICU source archives; use the portable path adapter where required and preserve frozen evaluation isolation.",
+    "boundary": "Unknown renal follow-up remains unknown; common-target comparisons condition on later eligibility and are not early deployable scores."
+  },
+  {
+    "repo": "clinical-observation-loss-augmentation",
+    "title": "Relative and absolute augmentation gains under observation loss",
+    "area": "Trustworthy AI",
+    "question": "Does an augmentation gain remain meaningful when absolute predictive performance falls under observation loss?",
+    "methods": "PhysioNet source-only fitting, explicit observation masking and locked held-out augmentation comparisons.",
+    "access": "Public PhysioNet Challenge 2012 and 2019 source inputs; acquire raw files separately and retain the original source splits.",
+    "boundary": "Relative gains must be read alongside absolute performance; controlled observation loss does not establish real hospital outage behaviour."
+  },
+  {
+    "repo": "ehr-missingness-model-selection",
+    "title": "Source-only clinical model selection under missingness stress",
+    "area": "Trustworthy AI",
+    "question": "Do missingness stress tests change source-only model selection, or do competing rules choose the same candidate?",
+    "methods": "Credentialed source extraction, missingness-stress pilot and explicit model-selection stopping rules.",
+    "access": "Credentialed MIMIC-IV source inputs; source-only study with no claimed external benefit. No patient rows or fitted objects bundled.",
+    "boundary": "All seven source selection rules chose the same candidate; no external or source-confirmation benefit was established."
+  },
+  {
+    "repo": "objective-physiological-phenotyping",
+    "title": "Objective physiological phenotyping: Sleep-EDF module",
+    "area": "AI for Health",
+    "question": "What can objective sleep architecture reveal without turning physiological disruption into a psychiatric label?",
+    "methods": "Sleep-EDF subject-grouped staging, night architecture and training-reference descriptive disruption phenotypes.",
+    "access": "Public Sleep-EDF Expanded source archive, acquired separately. This saved implementation covers the clean-room sleep module of the multi-domain product; the NHANES and wearable module source mapping remains open.",
+    "boundary": "Sleep module only: NHANES/wearable source mapping remains open. Objective disruption does not measure subjective complaints or psychiatric diagnosis."
+  },
+  {
+    "repo": "aki-progression-transportability",
+    "title": "AKI progression: transportability and model updating",
+    "area": "Prediction Modelling",
+    "question": "What changes when an AKI progression model moves between clinical databases and requires local updating?",
+    "methods": "AKI raw-archive cohort construction, tabular/temporal models, external evaluation and local calibration/updating.",
+    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Original records, individual predictions, original hospital identifiers and fitted weights are excluded.",
+    "boundary": "Cross-database differences and extraction scope limit transportability; retrospective updating is not prospective deployment evidence."
   }
 ]
