@@ -16,6 +16,6 @@ Split-aware preprocessing, calibration and cross-corpus evaluation.
 
 Read version-specific evidence; the local revision can be newer than the public release.
 
-Use the repository's environment, configuration and data guide for the executable commands. This portfolio page describes scope; it does not substitute for the versioned analysis protocol or assert a fresh full-data rerun.
+Use the repository's versioned environment, configuration and data-access guide for executable commands.
 
 [← All pipelines](../README.md)

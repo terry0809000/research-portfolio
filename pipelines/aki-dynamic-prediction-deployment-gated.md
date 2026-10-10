@@ -16,6 +16,6 @@ Dynamic prediction, alert thresholds and deployment constraints.
 
 Discrimination, calibration and patient benefit are distinct questions.
 
-Use the repository's environment, configuration and data guide for the executable commands. This portfolio page describes scope; it does not substitute for the versioned analysis protocol or assert a fresh full-data rerun.
+Use the repository's versioned environment, configuration and data-access guide for executable commands.
 
 [← All pipelines](../README.md)

@@ -17,6 +17,8 @@ A curated map of my research software, organized by scientific question. Each en
 
 ## Pipeline index
 
+22 published research pipelines, each with its own source repository.
+
 | Pipeline | Research area | Inputs / execution context |
 |:--|:--|:--|
 | [TRACE-Fib](pipelines/trace-fib-pipeline.md) | Computational biology | CPU · public deposit |
@@ -32,6 +34,15 @@ A curated map of my research software, organized by scientific question. Each en
 | [Sleep-EDF staging](pipelines/sleepingedf.md) | Physiological signals | Acquire Sleep-EDF |
 | [Rationale reliability audit](pipelines/hatespeechcheck.md) | Responsible NLP | Python · acquire benchmark data |
 | [SAFE-LABS](pipelines/safelabs-icu-lab-deferral.md) | Research methods | Synthetic validation / protocol |
+| [Healthcare access and glucose-testing gaps](pipelines/brfss-glucose-testing-access.md) | Health Informatics | Public-use BRFSS 2024 and 2025; acquire upstream source files locally. |
+| [Preprocessing sensitivity of glomerular BEX3 prioritisation](pipelines/dkd-bex3-preprocessing.md) | AI for Health | Public GEO and annotated kidney expression sources; obtain original inputs from their providers. |
+| [Temporal liver elastography triage](pipelines/liver-elastography-temporal-triage.md) | Prediction Modelling | Public-use NHANES; cohort extraction and availability rules are in source code. |
+| [Clinical trial inference: reference and answer-mapping sensitivity](pipelines/clinical-trial-inference-joint-audit.md) | Clinical NLP | Obtain source trial reports and model checkpoints using original acquisition scripts; third-party texts and model weights excluded. |
+| [Availability-aware source selection for clinical NLP](pipelines/availability-aware-clinical-nlp.md) | Clinical NLP | Original source reports, model checkpoints, E3C and authorized laboratory inputs are obtained separately. |
+| [Measurement-aware retrospective ICU prediction](pipelines/icu-measurement-aware-prediction.md) | Prediction Modelling | Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private. |
+| [AMI-CS dynamic risk modelling](pipelines/ami-cs-dynamic-risk-modeling.md) | Prediction Modelling | Credentialed MIMIC-IV / eICU |
+| [Sepsis-to-shock temporal prediction](pipelines/sepsis-shock-ai-medicine-v9.md) | Prediction Modelling | Credentialed MIMIC-IV / eICU |
+| [Social and behavioural determinants from clinical text](pipelines/MIMIC_SBDH.md) | Clinical NLP | Authorized MIMIC-III text / MIMIC-SBDH annotations |
 
 ## Reproduction, stated precisely
 

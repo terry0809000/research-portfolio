@@ -16,6 +16,6 @@ An installable package for HDF5 extraction, grouped evaluation and reproducible 
 
 Grouped benchmark performance does not establish a general cognitive mechanism.
 
-Use the repository's environment, configuration and data guide for the executable commands. This portfolio page describes scope; it does not substitute for the versioned analysis protocol or assert a fresh full-data rerun.
+Use the repository's versioned environment, configuration and data-access guide for executable commands.
 
 [← All pipelines](../README.md)

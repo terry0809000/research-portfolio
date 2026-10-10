@@ -115,5 +115,86 @@
     "methods": "Protocol, synthetic fixtures and exploratory empirical adapters.",
     "access": "Synthetic validation / protocol",
     "boundary": "Empirical outputs remain outside the public release pending named disclosure review."
+  },
+  {
+    "repo": "brfss-glucose-testing-access",
+    "title": "Healthcare access and glucose-testing gaps",
+    "area": "Health Informatics",
+    "question": "How do healthcare access and glucose-testing gaps vary in public-use survey data?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Public-use BRFSS 2024 and 2025; acquire upstream source files locally.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "dkd-bex3-preprocessing",
+    "title": "Preprocessing sensitivity of glomerular BEX3 prioritisation",
+    "area": "AI for Health",
+    "question": "How sensitive is glomerular BEX3 prioritisation to preprocessing choices?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Public GEO and annotated kidney expression sources; obtain original inputs from their providers.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "liver-elastography-temporal-triage",
+    "title": "Temporal liver elastography triage",
+    "area": "Prediction Modelling",
+    "question": "How do temporal evaluation and sensitivity targets affect liver elastography triage?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Public-use NHANES; cohort extraction and availability rules are in source code.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "clinical-trial-inference-joint-audit",
+    "title": "Clinical trial inference: reference and answer-mapping sensitivity",
+    "area": "Clinical NLP",
+    "question": "How do reference choices and answer mapping affect clinical-trial inference?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Obtain source trial reports and model checkpoints using original acquisition scripts; third-party texts and model weights excluded.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "availability-aware-clinical-nlp",
+    "title": "Availability-aware source selection for clinical NLP",
+    "area": "Clinical NLP",
+    "question": "How does source availability affect clinical NLP evaluation?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Original source reports, model checkpoints, E3C and authorized laboratory inputs are obtained separately.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "icu-measurement-aware-prediction",
+    "title": "Measurement-aware retrospective ICU prediction",
+    "area": "Prediction Modelling",
+    "question": "How do measurement patterns affect retrospective ICU prediction?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "ami-cs-dynamic-risk-modeling",
+    "title": "AMI-CS dynamic risk modelling",
+    "area": "Prediction Modelling",
+    "question": "How do shock anchors and dynamic predictors affect cross-database risk modelling?",
+    "methods": "Shock-anchored cohort construction, static and hourly dynamic modelling, calibration and bidirectional transport.",
+    "access": "Credentialed MIMIC-IV / eICU",
+    "boundary": "Retrospective research with source-specific governance and deployment limits."
+  },
+  {
+    "repo": "sepsis-shock-ai-medicine-v9",
+    "title": "Sepsis-to-shock temporal prediction",
+    "area": "Prediction Modelling",
+    "question": "How does temporal landmark modelling transport across ICU databases?",
+    "methods": "Sepsis-to-shock landmark prediction, source recalibration and cross-database evaluation.",
+    "access": "Credentialed MIMIC-IV / eICU",
+    "boundary": "Locked reported metrics belong to the XGBoost branch; they do not establish Transformer superiority."
+  },
+  {
+    "repo": "MIMIC_SBDH",
+    "title": "Social and behavioural determinants from clinical text",
+    "area": "Clinical NLP",
+    "question": "How do conventional and transformer models compare for SBDH classification?",
+    "methods": "Clinical-text preparation, TF-IDF baselines, frozen embeddings, fine-tuning and benchmark evaluation.",
+    "access": "Authorized MIMIC-III text / MIMIC-SBDH annotations",
+    "boundary": "Access-controlled clinical text must remain in an authorized environment."
   }
 ]
