@@ -1,5 +1,10 @@
 # Beyond Macro-F1
 
+**Portfolio home:** Clinical NLP  
+**Related direction:** Trustworthy AI  
+**Cross-subject scope:** Biomedical text classification and calibration.
+
+
 **Biomedical NLP** · Public code + versioned evidence
 
 ## The question
