@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/people-behind-the-data.svg" width="100%" alt="For the people behind the data — Tianyi Yu" /></p>
+<p align="center"><img src="assets/ai-for-health-scientific-cover.png" width="100%" alt="For the people behind the data — Tianyi Yu" /></p>
 
 [Meet me](https://github.com/terry0809000) · [Google Scholar](https://scholar.google.com/citations?user=m8F5KU8AAAAJ) · [ORCID](https://orcid.org/0009-0009-0311-4015)
 
