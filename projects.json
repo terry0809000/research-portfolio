@@ -2,119 +2,148 @@
   {
     "repo": "trace-fib-pipeline",
     "title": "TRACE-Fib",
-    "area": "Computational biology",
+    "area": "AI for Health",
     "question": "How do normalization and study weighting affect cross-organ transfer?",
     "methods": "Frozen open-data inputs, study-aware evaluation and sensitivity analysis.",
     "access": "CPU · public deposit",
-    "boundary": "A bounded retrospective reanalysis; nominal source units are not independently verified people."
+    "boundary": "A bounded retrospective reanalysis; nominal source units are not independently verified people.",
+    "original_domain": "Computational biology"
   },
   {
     "repo": "beyond-macro-f1-pubmed-rct-public",
     "title": "Beyond Macro-F1",
-    "area": "Biomedical NLP",
+    "area": "Clinical NLP",
     "question": "Does better classification imply better calibration and perturbation consistency?",
     "methods": "Sanitized benchmark code, result provenance and versioned evidence.",
     "access": "Public code + versioned evidence",
-    "boundary": "A benchmark comparison does not establish clinical utility."
+    "boundary": "A benchmark comparison does not establish clinical utility.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Biomedical text classification and calibration",
+    "original_domain": "Biomedical NLP"
   },
   {
     "repo": "ham10000-trustworthy-skin-ai",
     "title": "Selective skin-lesion referral",
-    "area": "Medical imaging",
+    "area": "Computer Vision & Biomedical Imaging",
     "question": "How do calibration and abstention change model evaluation?",
     "methods": "Lesion-level splitting, temperature scaling, risk–coverage analysis and subgroup audits.",
     "access": "Python · acquire source images",
-    "boundary": "Related-domain checks do not constitute prospective clinical validation."
+    "boundary": "Related-domain checks do not constitute prospective clinical validation.",
+    "original_domain": "Medical imaging"
   },
   {
     "repo": "ards-ahrf-ehr-temporal-validation",
     "title": "ARDS / AHRF temporal validation",
-    "area": "Clinical prediction",
+    "area": "Prediction Modelling",
     "question": "How does model performance change across time and ICU databases?",
     "methods": "Time-indexed EHR modelling, site shift, calibration and missingness audits.",
     "access": "Credentialed MIMIC-IV / eICU",
-    "boundary": "Research software; patient-level inputs stay in the authorized environment."
+    "boundary": "Research software; patient-level inputs stay in the authorized environment.",
+    "original_domain": "Clinical prediction"
   },
   {
     "repo": "zuco2-scientific-ml-pipeline",
     "title": "Reading dynamics with ZuCo 2.0",
-    "area": "Cognitive data science",
+    "area": "Clinical NLP",
     "question": "Can lexical and early-fixation features predict later processing load?",
     "methods": "An installable package for HDF5 extraction, grouped evaluation and reproducible configurations.",
     "access": "Python package · acquire ZuCo",
-    "boundary": "Grouped benchmark performance does not establish a general cognitive mechanism."
+    "boundary": "Grouped benchmark performance does not establish a general cognitive mechanism.",
+    "secondary_areas": [
+      "AI for Health"
+    ],
+    "classification_note": "Reading, lexical features and eye tracking; not a clinical cohort",
+    "original_domain": "Cognitive data science"
   },
   {
     "repo": "bmc-dm-prediction-one-week",
     "title": "Respiratory surveillance",
-    "area": "Public health",
+    "area": "Health Informatics",
     "question": "Can aggregate surveillance signals anticipate next-week escalation?",
     "methods": "Rolling-origin validation, chronological holdout and state-cluster uncertainty.",
     "access": "CPU · public aggregate surveillance",
-    "boundary": "A later holdout within one surveillance ecosystem is not external validation."
+    "boundary": "A later holdout within one surveillance ecosystem is not external validation.",
+    "secondary_areas": [
+      "AI for Health"
+    ],
+    "classification_note": "Public-health surveillance and rolling forecasts",
+    "original_domain": "Public health"
   },
   {
     "repo": "nhanes-temporal-diabetes-screening",
     "title": "Temporal screening evaluation",
-    "area": "Clinical prediction",
+    "area": "Prediction Modelling",
     "question": "Does model complexity improve probability estimation under temporal shift?",
     "methods": "Survey-weighted evaluation, calibration and a prespecified complexity-value gate.",
     "access": "Python · public-use NHANES",
-    "boundary": "The complexity-value gate failed; one HbA1c measurement is not confirmed diabetes."
+    "boundary": "The complexity-value gate failed; one HbA1c measurement is not confirmed diabetes.",
+    "original_domain": "Clinical prediction"
   },
   {
     "repo": "copd-asthma-extubation-transportability",
     "title": "Extubation transportability",
-    "area": "Clinical prediction",
+    "area": "Prediction Modelling",
     "question": "How does endpoint construction affect cross-database transport?",
     "methods": "Endpoint reconstruction, source-only transport and calibration diagnostics.",
     "access": "Credentialed MIMIC-IV / eICU",
-    "boundary": "Endpoint repair and external validation do not establish clinical readiness."
+    "boundary": "Endpoint repair and external validation do not establish clinical readiness.",
+    "original_domain": "Clinical prediction"
   },
   {
     "repo": "aki-dynamic-prediction-deployment-gated",
     "title": "Dynamic AKI prediction",
-    "area": "Clinical prediction",
+    "area": "Prediction Modelling",
     "question": "How do temporal renal models behave under external transport?",
     "methods": "Dynamic prediction, alert thresholds and deployment constraints.",
     "access": "Credentialed clinical data",
-    "boundary": "Discrimination, calibration and patient benefit are distinct questions."
+    "boundary": "Discrimination, calibration and patient benefit are distinct questions.",
+    "original_domain": "Clinical prediction"
   },
   {
     "repo": "biomedical-abstract-sentence-classification",
     "title": "Cross-corpus abstract classification",
-    "area": "Biomedical NLP",
+    "area": "Clinical NLP",
     "question": "How do lightweight sentence classifiers transfer between corpora?",
     "methods": "Split-aware preprocessing, calibration and cross-corpus evaluation.",
     "access": "CPU · public text corpora",
-    "boundary": "Read version-specific evidence; the local revision can be newer than the public release."
+    "boundary": "Read version-specific evidence; the local revision can be newer than the public release.",
+    "original_domain": "Biomedical NLP"
   },
   {
     "repo": "sleepingedf",
     "title": "Sleep-EDF staging",
-    "area": "Physiological signals",
+    "area": "AI for Health",
     "question": "How do local context, channel choice and smoothing affect sleep staging?",
     "methods": "Record-aware evaluation, channel ablations and repeated-seed comparisons.",
     "access": "Acquire Sleep-EDF",
-    "boundary": "Sequence smoothing can trade off different metrics; preserve record boundaries."
+    "boundary": "Sequence smoothing can trade off different metrics; preserve record boundaries.",
+    "original_domain": "Physiological signals"
   },
   {
     "repo": "hatespeechcheck",
     "title": "Rationale reliability audit",
-    "area": "Responsible NLP",
+    "area": "Clinical NLP",
     "question": "Do supporting rationales remain faithful and robust?",
     "methods": "Rationale evaluation, calibration, functional checks and subgroup diagnostics.",
     "access": "Python · acquire benchmark data",
-    "boundary": "Benchmark audits do not certify fairness or suitability for automated moderation."
+    "boundary": "Benchmark audits do not certify fairness or suitability for automated moderation.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "General NLP rationale benchmark; not clinical text",
+    "original_domain": "Responsible NLP"
   },
   {
     "repo": "safelabs-icu-lab-deferral",
     "title": "SAFE-LABS",
-    "area": "Research methods",
+    "area": "Trustworthy AI",
     "question": "How can a selective-prediction policy be tested without overstating safety?",
     "methods": "Protocol, synthetic fixtures and exploratory empirical adapters.",
     "access": "Synthetic validation / protocol",
-    "boundary": "Empirical outputs remain outside the public release pending named disclosure review."
+    "boundary": "Empirical outputs remain outside the public release pending named disclosure review.",
+    "original_domain": "Research methods"
   },
   {
     "repo": "brfss-glucose-testing-access",
@@ -137,11 +166,16 @@
   {
     "repo": "liver-elastography-temporal-triage",
     "title": "Temporal liver elastography triage",
-    "area": "Prediction Modelling",
+    "area": "Computer Vision & Biomedical Imaging",
     "question": "How do temporal evaluation and sensitivity targets affect liver elastography triage?",
     "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
     "access": "Public-use NHANES; cohort extraction and availability rules are in source code.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
+    "secondary_areas": [
+      "Prediction Modelling"
+    ],
+    "classification_note": "Elastography-derived triage; tabular measurements, not raw-image learning",
+    "original_domain": "Prediction Modelling"
   },
   {
     "repo": "clinical-trial-inference-joint-audit",
@@ -164,11 +198,16 @@
   {
     "repo": "icu-measurement-aware-prediction",
     "title": "Measurement-aware retrospective ICU prediction",
-    "area": "Prediction Modelling",
+    "area": "Health Informatics",
     "question": "How do measurement patterns affect retrospective ICU prediction?",
     "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
     "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
+    "secondary_areas": [
+      "Prediction Modelling"
+    ],
+    "classification_note": "Clinical measurement processes and retrospective EHR prediction",
+    "original_domain": "Prediction Modelling"
   },
   {
     "repo": "ami-cs-dynamic-risk-modeling",
@@ -218,11 +257,16 @@
   {
     "repo": "transcriptomic-patient-reuse",
     "title": "Patient reuse and apparent transcriptomic diagnostic performance",
-    "area": "Trustworthy AI",
+    "area": "AI for Health",
     "question": "How does patient reuse affect apparent transcriptomic diagnostic performance?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Acquire source transcriptomic cohorts under their terms. No participant-level analytical inputs are uploaded.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Transcriptomic diagnostics and patient-reuse evaluation",
+    "original_domain": "Trustworthy AI"
   },
   {
     "repo": "synthetic-validation-source-limits",
@@ -245,38 +289,50 @@
   {
     "repo": "nhanes-kidney-risk-stability",
     "title": "Stability and clinical interpretation of kidney risk models",
-    "area": "Prediction Modelling",
+    "area": "Health Informatics",
     "question": "How stable and clinically interpretable are kidney risk models?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Public-use NHANES; frozen specifications and acquisition requirements are retained.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "secondary_areas": [
+      "Prediction Modelling"
+    ],
+    "classification_note": "Population survey data and kidney-risk interpretation",
+    "original_domain": "Prediction Modelling"
   },
   {
     "repo": "melanoma-excision-selection",
     "title": "Excision selection and melanoma assessment",
-    "area": "Biomedical Imaging",
+    "area": "Computer Vision & Biomedical Imaging",
     "question": "How does excision selection affect melanoma assessment?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Obtain original lesion-level inputs from the source providers. Selection endpoints and split constraints remain as coded.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "original_domain": "Biomedical Imaging"
   },
   {
     "repo": "pulmonary-nodule-transcriptomic-audit",
     "title": "False positives and sample reuse in pulmonary-nodule assessment",
-    "area": "Trustworthy AI",
+    "area": "AI for Health",
     "question": "How do false positives and sample reuse affect pulmonary-nodule assessment?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Original public expression cohorts must be acquired separately; coded patient rows and predictions are not redistributed.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Transcriptomic pulmonary-nodule assessment; not CT image analysis",
+    "original_domain": "Trustworthy AI"
   },
   {
     "repo": "breast-mri-response-prediction",
     "title": "MRI and clinical prediction of pathological complete response",
-    "area": "Biomedical Imaging",
+    "area": "Computer Vision & Biomedical Imaging",
     "question": "What can MRI and clinical information tell us about pathological complete response?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Acquire I-SPY1/I-SPY2 source images, clinical data and outcome files under their original terms.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "original_domain": "Biomedical Imaging"
   },
   {
     "repo": "pads-adaptive-acquisition",
