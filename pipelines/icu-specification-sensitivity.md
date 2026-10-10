@@ -2,7 +2,11 @@
 
 # Specification sensitivity in retrospective ICU evaluation
 
-**Prediction Modelling**
+**Trustworthy AI**
+
+Portfolio home: **Trustworthy AI** · Related direction: **Prediction Modelling**.
+
+Cross-subject scope: Analysis-specification sensitivity and retrospective prediction evaluation.
 
 ## The question
 
