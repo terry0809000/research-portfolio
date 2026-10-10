@@ -1,5 +1,10 @@
 # Rationale reliability audit
 
+**Portfolio home:** Clinical NLP  
+**Related direction:** Trustworthy AI  
+**Cross-subject scope:** General NLP rationale benchmark; not clinical text.
+
+
 **Responsible NLP** · Python · acquire benchmark data
 
 ## The question
