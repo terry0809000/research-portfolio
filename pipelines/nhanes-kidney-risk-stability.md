@@ -2,6 +2,11 @@
 
 # Stability and clinical interpretation of kidney risk models
 
+**Portfolio home:** Health Informatics  
+**Related direction:** Prediction Modelling  
+**Cross-subject scope:** Population survey data and kidney-risk interpretation.
+
+
 **Prediction Modelling**
 
 ## The question
