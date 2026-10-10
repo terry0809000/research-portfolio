@@ -1,23 +1,29 @@
-<p align="center"><img src="assets/header.svg" width="100%" alt="From question to pipeline — Tianyi Yu's research software portfolio" /></p>
+<p align="center"><img src="assets/header.svg" width="100%" alt="For the people behind the data — Tianyi Yu" /></p>
 
-[Profile](https://github.com/terry0809000) · [Google Scholar](https://scholar.google.com/citations?user=m8F5KU8AAAAJ) · [ORCID](https://orcid.org/0009-0009-0311-4015)
+[Meet me](https://github.com/terry0809000) · [Google Scholar](https://scholar.google.com/citations?user=m8F5KU8AAAAJ) · [ORCID](https://orcid.org/0009-0009-0311-4015)
 
-A curated map of my research software, organized by scientific question. Each entry links to a pipeline and explains its data requirements and interpretation boundary. This is a software portfolio, not a publication list.
+A clinical note holds someone's story. An image can carry a clue that is easy to miss. A risk score may shape what happens next.
 
-## Research directions
+That is what draws me to AI for health. I want to understand what these tools can learn, where they fall short, and what it would take to make them useful to the people who depend on them.
 
-| Direction | Representative pipeline |
-|:--|:--|
-| **Clinical NLP** | [Beyond Macro-F1](https://github.com/terry0809000/beyond-macro-f1-pubmed-rct-public) · [Cross-corpus abstract classification](pipelines/biomedical-abstract-sentence-classification.md) |
-| **Computer Vision & Biomedical Imaging** | [Selective skin-lesion referral](https://github.com/terry0809000/ham10000-trustworthy-skin-ai) |
-| **Trustworthy AI** | [Calibration and consistency](pipelines/beyond-macro-f1-pubmed-rct-public.md) · [Representation sensitivity](pipelines/trace-fib-pipeline.md) |
-| **Prediction Modelling** | [ARDS / AHRF](pipelines/ards-ahrf-ehr-temporal-validation.md) · [Temporal screening](pipelines/nhanes-temporal-diabetes-screening.md) |
-| **Health Informatics** | [Dynamic AKI prediction](pipelines/aki-dynamic-prediction-deployment-gated.md) · [SAFE-LABS](pipelines/safelabs-icu-lab-deferral.md) |
-| **AI for Health** | [Respiratory surveillance](pipelines/bmc-dm-prediction-one-week.md) · [Sleep staging](pipelines/sleepingedf.md) |
+I'm **Tianyi Yu**. I work across clinical language, biomedical imaging and prediction modelling, with a particular interest in trust: does a promising result survive a new hospital, a different population, or the messiness of everyday care?
 
-## Pipeline index
+This is where I share the code behind those questions. Pick a project, look under the hood, and try it with your own questions. I'd love to hear what you find.
 
-22 published research pipelines, each with its own source repository.
+## The questions that keep me curious
+
+| Where I work | What I want to understand | A place to start |
+|:--|:--|:--|
+| **Clinical NLP** | How much of a clinical story can a model understand—and what does it miss? | [Clinical text & social determinants](pipelines/MIMIC_SBDH.md) · [Trial inference](pipelines/clinical-trial-inference-joint-audit.md) |
+| **Computer Vision & Biomedical Imaging** | Can we find useful signals in images and recognise when a model is unsure? | [Skin-lesion referral](pipelines/ham10000-trustworthy-skin-ai.md) |
+| **Trustworthy AI** | When should we trust a prediction, question it, or ask for another opinion? | [Beyond Macro-F1](pipelines/beyond-macro-f1-pubmed-rct-public.md) · [TRACE-Fib](pipelines/trace-fib-pipeline.md) |
+| **Prediction Modelling** | Will a model still help when the hospital, population or timing changes? | [ARDS / AHRF](pipelines/ards-ahrf-ehr-temporal-validation.md) · [Dynamic AKI](pipelines/aki-dynamic-prediction-deployment-gated.md) |
+| **Health Informatics** | What do the ways we collect and record data reveal about care? | [ICU measurement patterns](pipelines/icu-measurement-aware-prediction.md) · [Glucose-testing gaps](pipelines/brfss-glucose-testing-access.md) |
+| **AI for Health** | Where can computation help us see a health problem more clearly? | [Sleep signals](pipelines/sleepingedf.md) · [Respiratory surveillance](pipelines/bmc-dm-prediction-one-week.md) |
+
+## Explore the projects
+
+Follow a question that interests you. Each project opens into its own code, methods and guide to getting started.
 
 | Pipeline | Research area | Inputs / execution context |
 |:--|:--|:--|
@@ -34,25 +40,31 @@ A curated map of my research software, organized by scientific question. Each en
 | [Sleep-EDF staging](pipelines/sleepingedf.md) | Physiological signals | Acquire Sleep-EDF |
 | [Rationale reliability audit](pipelines/hatespeechcheck.md) | Responsible NLP | Python · acquire benchmark data |
 | [SAFE-LABS](pipelines/safelabs-icu-lab-deferral.md) | Research methods | Synthetic validation / protocol |
-| [Healthcare access and glucose-testing gaps](pipelines/brfss-glucose-testing-access.md) | Health Informatics | Public-use BRFSS 2024 and 2025; acquire upstream source files locally. |
-| [Preprocessing sensitivity of glomerular BEX3 prioritisation](pipelines/dkd-bex3-preprocessing.md) | AI for Health | Public GEO and annotated kidney expression sources; obtain original inputs from their providers. |
-| [Temporal liver elastography triage](pipelines/liver-elastography-temporal-triage.md) | Prediction Modelling | Public-use NHANES; cohort extraction and availability rules are in source code. |
-| [Clinical trial inference: reference and answer-mapping sensitivity](pipelines/clinical-trial-inference-joint-audit.md) | Clinical NLP | Obtain source trial reports and model checkpoints using original acquisition scripts; third-party texts and model weights excluded. |
-| [Availability-aware source selection for clinical NLP](pipelines/availability-aware-clinical-nlp.md) | Clinical NLP | Original source reports, model checkpoints, E3C and authorized laboratory inputs are obtained separately. |
-| [Measurement-aware retrospective ICU prediction](pipelines/icu-measurement-aware-prediction.md) | Prediction Modelling | Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private. |
+| [Healthcare access and glucose-testing gaps](pipelines/brfss-glucose-testing-access.md) | Health Informatics | BRFSS 2024–2025 |
+| [Preprocessing sensitivity of glomerular BEX3 prioritisation](pipelines/dkd-bex3-preprocessing.md) | AI for Health | GEO · kidney expression data |
+| [Temporal liver elastography triage](pipelines/liver-elastography-temporal-triage.md) | Prediction Modelling | Public-use NHANES |
+| [Clinical trial inference: reference and answer-mapping sensitivity](pipelines/clinical-trial-inference-joint-audit.md) | Clinical NLP | Trial reports · language models |
+| [Availability-aware source selection for clinical NLP](pipelines/availability-aware-clinical-nlp.md) | Clinical NLP | E3C · source reports · authorized inputs |
+| [Measurement-aware retrospective ICU prediction](pipelines/icu-measurement-aware-prediction.md) | Prediction Modelling | Credentialed MIMIC-IV / eICU |
 | [AMI-CS dynamic risk modelling](pipelines/ami-cs-dynamic-risk-modeling.md) | Prediction Modelling | Credentialed MIMIC-IV / eICU |
 | [Sepsis-to-shock temporal prediction](pipelines/sepsis-shock-ai-medicine-v9.md) | Prediction Modelling | Credentialed MIMIC-IV / eICU |
 | [Social and behavioural determinants from clinical text](pipelines/MIMIC_SBDH.md) | Clinical NLP | Authorized MIMIC-III text / MIMIC-SBDH annotations |
 
-## Reproduction, stated precisely
+## Open the code. Ask another question.
 
-- Follow each pipeline's pinned environment and data-access instructions. Public code does not imply unrestricted source data.
-- A synthetic test verifies software behavior; it is not an empirical replication or clinical validation.
-- The new TRACE-Fib wrapper separates tests, frozen-result verification and full analysis. Other repositories retain their own entry points; a catalogue listing is not a claim that all models were retrained during this portfolio refresh.
-- Negative findings and scope limits are part of the result. Repository availability does not imply journal acceptance.
+The most interesting part of sharing a project is seeing what someone else notices. If you spot a fragile assumption, have a better approach, or want to explore a related problem, [open an issue in the relevant repository](https://github.com/terry0809000?tab=repositories). Thoughtful questions are welcome.
 
-## Repository policy
+To run a project, start with its README and data-access guide. Each repository explains its environment, inputs and analysis steps; some clinical datasets require authorized access.
 
-Project repositories contain analysis code, configurations, dependency specifications, tests, reproduction instructions and permitted evidence. Manuscript text, title pages, cover letters and submission bundles belong outside the software repositories. Credentialed clinical inputs, patient-level derivatives and private administrative material must remain in their authorized environments.
+<details>
+<summary>A few practical notes before you run anything</summary>
 
-The catalogue is also available as [structured JSON](projects.json). Source history and source-specific licenses remain with each project.
+- Use the project's own versioned dependencies, configuration and execution instructions.
+- Clinical records and patient-level outputs stay in the environment where you are authorized to use them.
+- Some workflows need separately acquired data or saved artifacts. Source availability alone does not establish a full reproduction.
+- This portfolio update did not retrain or independently rerun every model. Synthetic checks and retrospective results have their own limits, described in the individual projects.
+- Manuscripts and submission materials stay outside the software repositories. Original source licenses and data conditions apply.
+
+For a machine-readable project list, see [projects.json](projects.json).
+
+</details>
