@@ -49,11 +49,13 @@ Choose a direction below. **Project titles open the repository; “Guide” open
 
 ## Explore the projects
 
+Each project has one home here. Related directions stay visible in its guide and cross-subject labels.
+
 <a id="clinical-nlp"></a>
 
 ### Clinical NLP
 
-Language is where much of the clinical story lives. I explore what models understand, and what gets lost between a note and a prediction.
+Clinical and biomedical language sit at the centre of this direction, alongside reading and rationale benchmarks that help examine how language models behave.
 
 | Project | The question behind it |
 |:--|:--|
@@ -61,6 +63,9 @@ Language is where much of the clinical story lives. I explore what models unders
 | **[Cross-corpus abstract classification](https://github.com/terry0809000/biomedical-abstract-sentence-classification)**<br>[Guide](pipelines/biomedical-abstract-sentence-classification.md) | How do lightweight sentence classifiers transfer between corpora? |
 | **[Clinical trial inference: reference and answer-mapping sensitivity](https://github.com/terry0809000/clinical-trial-inference-joint-audit)**<br>[Guide](pipelines/clinical-trial-inference-joint-audit.md) | How do reference choices and answer mapping affect clinical-trial inference? |
 | **[Availability-aware source selection for clinical NLP](https://github.com/terry0809000/availability-aware-clinical-nlp)**<br>[Guide](pipelines/availability-aware-clinical-nlp.md) | How does source availability affect clinical NLP evaluation? |
+| **[Beyond Macro-F1](https://github.com/terry0809000/beyond-macro-f1-pubmed-rct-public)**<br>[Guide](pipelines/beyond-macro-f1-pubmed-rct-public.md)<br><sub>Also: Trustworthy AI</sub> | Does better classification imply better calibration and perturbation consistency? |
+| **[Rationale reliability audit](https://github.com/terry0809000/hatespeechcheck)**<br>[Guide](pipelines/hatespeechcheck.md)<br><sub>Also: Trustworthy AI</sub> | Do supporting rationales remain faithful and robust? |
+| **[Reading dynamics with ZuCo 2.0](https://github.com/terry0809000/zuco2-scientific-ml-pipeline)**<br>[Guide](pipelines/zuco2-scientific-ml-pipeline.md)<br><sub>Also: AI for Health</sub> | Can lexical and early-fixation features predict later processing load? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -68,7 +73,7 @@ Language is where much of the clinical story lives. I explore what models unders
 
 ### Computer Vision & Biomedical Imaging
 
-Looking for useful signals in medical images—and asking how image selection and uncertainty change the answer.
+Medical images, reconstruction and elastography-derived measurements: useful signals, with explicit limits on what each pipeline actually analyses.
 
 | Project | The question behind it |
 |:--|:--|
@@ -77,6 +82,7 @@ Looking for useful signals in medical images—and asking how image selection an
 | **[MRI and clinical prediction of pathological complete response](https://github.com/terry0809000/breast-mri-response-prediction)**<br>[Guide](pipelines/breast-mri-response-prediction.md) | What can MRI and clinical information tell us about pathological complete response? |
 | **[Color-response sensitivity for pathology error screening](https://github.com/terry0809000/cvpath-color-response-screening)**<br>[Guide](pipelines/cvpath-color-response-screening.md) | Can stain-perturbation responses help screen pathology classification errors? |
 | **[MRI calibration-noise analysis](https://github.com/terry0809000/mri-calibration-noise)**<br>[Guide](pipelines/mri-calibration-noise.md) | How does sensitivity-map calibration carry added noise into MRI reconstruction? |
+| **[Temporal liver elastography triage](https://github.com/terry0809000/liver-elastography-temporal-triage)**<br>[Guide](pipelines/liver-elastography-temporal-triage.md)<br><sub>Also: Prediction Modelling</sub> | How do temporal evaluation and sensitivity targets affect liver elastography triage? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -88,12 +94,8 @@ A strong headline metric is only the beginning. These projects examine calibrati
 
 | Project | The question behind it |
 |:--|:--|
-| **[Beyond Macro-F1](https://github.com/terry0809000/beyond-macro-f1-pubmed-rct-public)**<br>[Guide](pipelines/beyond-macro-f1-pubmed-rct-public.md) | Does better classification imply better calibration and perturbation consistency? |
-| **[Rationale reliability audit](https://github.com/terry0809000/hatespeechcheck)**<br>[Guide](pipelines/hatespeechcheck.md) | Do supporting rationales remain faithful and robust? |
 | **[SAFE-LABS](https://github.com/terry0809000/safelabs-icu-lab-deferral)**<br>[Guide](pipelines/safelabs-icu-lab-deferral.md) | How can a selective-prediction policy be tested without overstating safety? |
-| **[Patient reuse and apparent transcriptomic diagnostic performance](https://github.com/terry0809000/transcriptomic-patient-reuse)**<br>[Guide](pipelines/transcriptomic-patient-reuse.md) | How does patient reuse affect apparent transcriptomic diagnostic performance? |
 | **[Source information limits in synthetic validation](https://github.com/terry0809000/synthetic-validation-source-limits)**<br>[Guide](pipelines/synthetic-validation-source-limits.md) | What can synthetic validation establish when source information is limited? |
-| **[False positives and sample reuse in pulmonary-nodule assessment](https://github.com/terry0809000/pulmonary-nodule-transcriptomic-audit)**<br>[Guide](pipelines/pulmonary-nodule-transcriptomic-audit.md) | How do false positives and sample reuse affect pulmonary-nodule assessment? |
 | **[Outcome ascertainment and transportability in ICU prediction](https://github.com/terry0809000/icu-outcome-ascertainment)**<br>[Guide](pipelines/icu-outcome-ascertainment.md) | How do endpoint recording and observation timing change ICU model evaluation? |
 | **[Clinical prediction uncertainty and identification](https://github.com/terry0809000/clinical-uncertainty-identification)**<br>[Guide](pipelines/clinical-uncertainty-identification.md) | Which clinical prediction conclusions can the available evidence identify? |
 | **[Universal preservation under stochastic transformations](https://github.com/terry0809000/universal-preservation-theory)**<br>[Guide](pipelines/universal-preservation-theory.md) | When does a shared stochastic observation preserve decision order? |
@@ -116,12 +118,9 @@ Predictions live in time. I study how clinical models behave when the population
 | **[Temporal screening evaluation](https://github.com/terry0809000/nhanes-temporal-diabetes-screening)**<br>[Guide](pipelines/nhanes-temporal-diabetes-screening.md) | Does model complexity improve probability estimation under temporal shift? |
 | **[Extubation transportability](https://github.com/terry0809000/copd-asthma-extubation-transportability)**<br>[Guide](pipelines/copd-asthma-extubation-transportability.md) | How does endpoint construction affect cross-database transport? |
 | **[Dynamic AKI prediction](https://github.com/terry0809000/aki-dynamic-prediction-deployment-gated)**<br>[Guide](pipelines/aki-dynamic-prediction-deployment-gated.md) | How do temporal renal models behave under external transport? |
-| **[Temporal liver elastography triage](https://github.com/terry0809000/liver-elastography-temporal-triage)**<br>[Guide](pipelines/liver-elastography-temporal-triage.md) | How do temporal evaluation and sensitivity targets affect liver elastography triage? |
-| **[Measurement-aware retrospective ICU prediction](https://github.com/terry0809000/icu-measurement-aware-prediction)**<br>[Guide](pipelines/icu-measurement-aware-prediction.md) | How do measurement patterns affect retrospective ICU prediction? |
 | **[AMI-CS dynamic risk modelling](https://github.com/terry0809000/ami-cs-dynamic-risk-modeling)**<br>[Guide](pipelines/ami-cs-dynamic-risk-modeling.md) | How do shock anchors and dynamic predictors affect cross-database risk modelling? |
 | **[Sepsis-to-shock temporal prediction](https://github.com/terry0809000/sepsis-shock-ai-medicine-v9)**<br>[Guide](pipelines/sepsis-shock-ai-medicine-v9.md) | How does temporal landmark modelling transport across ICU databases? |
 | **[Specification sensitivity in retrospective ICU evaluation](https://github.com/terry0809000/icu-specification-sensitivity)**<br>[Guide](pipelines/icu-specification-sensitivity.md) | How do analysis specifications change retrospective ICU evaluation? |
-| **[Stability and clinical interpretation of kidney risk models](https://github.com/terry0809000/nhanes-kidney-risk-stability)**<br>[Guide](pipelines/nhanes-kidney-risk-stability.md) | How stable and clinically interpretable are kidney risk models? |
 | **[Incremental prediction of hypernatremia](https://github.com/terry0809000/hypernatremia-incremental-prediction)**<br>[Guide](pipelines/hypernatremia-incremental-prediction.md) | What does a model add beyond routine sodium measurements? |
 | **[Incremental value of vasopressor prediction](https://github.com/terry0809000/vasopressor-incremental-value)**<br>[Guide](pipelines/vasopressor-incremental-value.md) | Do disease-specific treatment patterns add useful mortality predictions? |
 | **[Dynamic major adverse kidney-event prediction in T2DM and CKD](https://github.com/terry0809000/t2dm-ckd-dynamic-kidney-risk)**<br>[Guide](pipelines/t2dm-ckd-dynamic-kidney-risk.md) | How does kidney-event prediction change across clinical landmarks when follow-up and cohort eligibility remain explicit? |
@@ -133,7 +132,7 @@ Predictions live in time. I study how clinical models behave when the population
 
 ### Health Informatics
 
-How we collect data is part of the story. These workflows connect measurement, access to care and everyday health experiences.
+How we collect and record data is part of the story. These workflows connect clinical measurement, population surveys, surveillance and access to care.
 
 | Project | The question behind it |
 |:--|:--|
@@ -144,6 +143,9 @@ How we collect data is part of the story. These workflows connect measurement, a
 | **[Healthcare affordability and testing gaps](https://github.com/terry0809000/nhis-affordability-testing-gaps)**<br>[Guide](pipelines/nhis-affordability-testing-gaps.md) | When care costs too much, who misses a test? |
 | **[Availability-aware EHR modelling](https://github.com/terry0809000/ash-ehr-availability)**<br>[Guide](pipelines/ash-ehr-availability.md) | What changes when a clinical model can use only the information actually available at prediction time? |
 | **[Laboratory documentation counts and retrospective recording rules](https://github.com/terry0809000/icu-documentation-counts)**<br>[Guide](pipelines/icu-documentation-counts.md) | When does a laboratory documentation count reflect recording rules rather than a distinct clinical measurement? |
+| **[Measurement-aware retrospective ICU prediction](https://github.com/terry0809000/icu-measurement-aware-prediction)**<br>[Guide](pipelines/icu-measurement-aware-prediction.md)<br><sub>Also: Prediction Modelling</sub> | How do measurement patterns affect retrospective ICU prediction? |
+| **[Stability and clinical interpretation of kidney risk models](https://github.com/terry0809000/nhanes-kidney-risk-stability)**<br>[Guide](pipelines/nhanes-kidney-risk-stability.md)<br><sub>Also: Prediction Modelling</sub> | How stable and clinically interpretable are kidney risk models? |
+| **[Respiratory surveillance](https://github.com/terry0809000/bmc-dm-prediction-one-week)**<br>[Guide](pipelines/bmc-dm-prediction-one-week.md)<br><sub>Also: AI for Health</sub> | Can aggregate surveillance signals anticipate next-week escalation? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
@@ -156,14 +158,14 @@ From molecular variation to sleep and movement, I build tools to explore health 
 | Project | The question behind it |
 |:--|:--|
 | **[TRACE-Fib](https://github.com/terry0809000/trace-fib-pipeline)**<br>[Guide](pipelines/trace-fib-pipeline.md) | How do normalization and study weighting affect cross-organ transfer? |
-| **[Reading dynamics with ZuCo 2.0](https://github.com/terry0809000/zuco2-scientific-ml-pipeline)**<br>[Guide](pipelines/zuco2-scientific-ml-pipeline.md) | Can lexical and early-fixation features predict later processing load? |
-| **[Respiratory surveillance](https://github.com/terry0809000/bmc-dm-prediction-one-week)**<br>[Guide](pipelines/bmc-dm-prediction-one-week.md) | Can aggregate surveillance signals anticipate next-week escalation? |
 | **[Sleep-EDF staging](https://github.com/terry0809000/sleepingedf)**<br>[Guide](pipelines/sleepingedf.md) | How do local context, channel choice and smoothing affect sleep staging? |
 | **[Preprocessing sensitivity of glomerular BEX3 prioritisation](https://github.com/terry0809000/dkd-bex3-preprocessing)**<br>[Guide](pipelines/dkd-bex3-preprocessing.md) | How sensitive is glomerular BEX3 prioritisation to preprocessing choices? |
 | **[Adaptive versus fixed smartwatch task acquisition](https://github.com/terry0809000/pads-adaptive-acquisition)**<br>[Guide](pipelines/pads-adaptive-acquisition.md) | How does adaptive smartwatch task acquisition compare with fixed acquisition? |
 | **[Selective review and total sleep time estimation](https://github.com/terry0809000/sleep-duration-selective-review)**<br>[Guide](pipelines/sleep-duration-selective-review.md) | Which sleep epochs deserve review when estimating total sleep time? |
 | **[ECG reliability screening with fixed calibration](https://github.com/terry0809000/earlybird-ecg-reliability)**<br>[Guide](pipelines/earlybird-ecg-reliability.md) | Can fixed calibration recognize perturbed ECG inputs without mistaking simulated labels for clinical quality? |
 | **[Objective physiological phenotyping: Sleep-EDF module](https://github.com/terry0809000/objective-physiological-phenotyping)**<br>[Guide](pipelines/objective-physiological-phenotyping.md) | What can objective sleep architecture reveal without turning physiological disruption into a psychiatric label? |
+| **[Patient reuse and apparent transcriptomic diagnostic performance](https://github.com/terry0809000/transcriptomic-patient-reuse)**<br>[Guide](pipelines/transcriptomic-patient-reuse.md)<br><sub>Also: Trustworthy AI</sub> | How does patient reuse affect apparent transcriptomic diagnostic performance? |
+| **[False positives and sample reuse in pulmonary-nodule assessment](https://github.com/terry0809000/pulmonary-nodule-transcriptomic-audit)**<br>[Guide](pipelines/pulmonary-nodule-transcriptomic-audit.md)<br><sub>Also: Trustworthy AI</sub> | How do false positives and sample reuse affect pulmonary-nodule assessment? |
 
 [↑ Back to directions](#a-few-places-to-begin)
 
