@@ -2,6 +2,11 @@
 
 # False positives and sample reuse in pulmonary-nodule assessment
 
+**Portfolio home:** AI for Health  
+**Related direction:** Trustworthy AI  
+**Cross-subject scope:** Transcriptomic pulmonary-nodule assessment; not CT image analysis.
+
+
 **Trustworthy AI**
 
 ## The question
