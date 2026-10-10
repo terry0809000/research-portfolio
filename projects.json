@@ -295,5 +295,86 @@
     "methods": "R workflow comparing base and additive contemporaneous and temporal networks, with same-participant and same-day survey lags.",
     "access": "Authorized EMA CSV · R",
     "boundary": "Associational networks in exercise-target observations; not causal effects or individual diagnosis."
+  },
+  {
+    "repo": "nhis-affordability-testing-gaps",
+    "title": "Healthcare affordability and testing gaps",
+    "area": "Health Informatics",
+    "question": "When care costs too much, who misses a test?",
+    "methods": "Public-use NHIS survey processing, affordability profiles and testing-gap analyses.",
+    "access": "Public-use NHIS 2024/2025 source releases; obtain source tables separately.",
+    "boundary": "Survey-based associations do not establish causal effects on access to care."
+  },
+  {
+    "repo": "hypernatremia-incremental-prediction",
+    "title": "Incremental prediction of hypernatremia",
+    "area": "Prediction Modelling",
+    "question": "What does a model add beyond routine sodium measurements?",
+    "methods": "Sodium cohort construction, temporal checks, baseline comparisons and robustness analyses.",
+    "access": "Credentialed MIMIC-IV and eICU; authorized extraction and phenotype rules are retained.",
+    "boundary": "Later optimized analyses reuse inspected evaluation populations and are not independent confirmation."
+  },
+  {
+    "repo": "vasopressor-incremental-value",
+    "title": "Incremental value of vasopressor prediction",
+    "area": "Prediction Modelling",
+    "question": "Do disease-specific treatment patterns add useful mortality predictions?",
+    "methods": "ICU extraction, disease-specific cross-fitted process encoders, baseline comparisons and robustness analysis.",
+    "access": "Credentialed ICU archives. Raw records, predictions and fitted models are kept private.",
+    "boundary": "The later hierarchy and tuning are exploratory; a stable external incremental advantage was not established."
+  },
+  {
+    "repo": "icu-outcome-ascertainment",
+    "title": "Outcome ascertainment and transportability in ICU prediction",
+    "area": "Trustworthy AI",
+    "question": "How do endpoint recording and observation timing change ICU model evaluation?",
+    "methods": "Recorded endpoint construction, observation timing, definition sensitivity and cross-database evaluation.",
+    "access": "Credentialed ICU archives; source ascertainment and availability limitations are retained.",
+    "boundary": "Implementation agreement and recorded events do not constitute independent clinical adjudication."
+  },
+  {
+    "repo": "clinical-uncertainty-identification",
+    "title": "Clinical prediction uncertainty and identification",
+    "area": "Trustworthy AI",
+    "question": "Which clinical prediction conclusions can the available evidence identify?",
+    "methods": "Exact rational identification checks, bounded correction and explicitly synthetic audit simulations.",
+    "access": "Analytical examples and explicitly synthetic simulations; no patient dataset required for the analytical checks.",
+    "boundary": "Stipulated simulation assumptions and computational checks do not establish clinical effectiveness."
+  },
+  {
+    "repo": "universal-preservation-theory",
+    "title": "Universal preservation under stochastic transformations",
+    "area": "Trustworthy AI",
+    "question": "When does a shared stochastic observation preserve decision order?",
+    "methods": "Finite-alphabet enumeration, LP candidate search and exact rational certificate checking.",
+    "access": "Finite-alphabet numerical examples, certificates and synthetic experiments.",
+    "boundary": "Finite numerical searches do not alone establish universal mathematical preservation or clinical effects."
+  },
+  {
+    "repo": "sleep-duration-selective-review",
+    "title": "Selective review and total sleep time estimation",
+    "area": "AI for Health",
+    "question": "Which sleep epochs deserve review when estimating total sleep time?",
+    "methods": "Frozen sleep predictions, review-policy calibration, reviewer rotation and fixed-fold refitting stability.",
+    "access": "Obtain source PSG/hypnograms and any licensed model weights separately; epoch-level evidence is excluded.",
+    "boundary": "Archived expert labels simulate review; the exploratory retrospective study does not establish prospective clinical utility."
+  },
+  {
+    "repo": "cvpath-color-response-screening",
+    "title": "Color-response sensitivity for pathology error screening",
+    "area": "Computer Vision & Biomedical Imaging",
+    "question": "Can stain-perturbation responses help screen pathology classification errors?",
+    "methods": "Fixed PathMNIST224 classifiers, color-response screening scores and frozen source-to-target evaluation.",
+    "access": "PathMNIST224, CC BY 4.0; obtain from the documented Zenodo release. Training needs CUDA-capable hardware.",
+    "boundary": "Patch-level derivative data lack patient/slide identifiers; source and external partitions do not establish wholly unseen institutions."
+  },
+  {
+    "repo": "mri-calibration-noise",
+    "title": "MRI calibration-noise analysis",
+    "area": "Computer Vision & Biomedical Imaging",
+    "question": "How does sensitivity-map calibration carry added noise into MRI reconstruction?",
+    "methods": "Multicoil calibration-noise probes, descriptive replication and finite-difference diagnostics.",
+    "access": "Public source MRI releases and fixed development/evaluation splits, as specified in the original code.",
+    "boundary": "Added identity-covariance noise around noisy measured data does not estimate native scanner covariance or establish clinical generality."
   }
 ]
