@@ -50,6 +50,18 @@ Follow a question that interests you. Each project opens into its own code, meth
 | [Sepsis-to-shock temporal prediction](pipelines/sepsis-shock-ai-medicine-v9.md) | Prediction Modelling | Credentialed MIMIC-IV / eICU |
 | [Social and behavioural determinants from clinical text](pipelines/MIMIC_SBDH.md) | Clinical NLP | Authorized MIMIC-III text / MIMIC-SBDH annotations |
 
+| [Six-hour ICU laboratory prediction](pipelines/icu-six-hour-lab-prediction.md) | Health Informatics | Credentialed MIMIC-IV 3.1 and eICU 2.0; extraction paths must point to your authorized archives. |
+| [Temporal measurement and source availability benchmark](pipelines/icu-temporal-measurement-benchmark.md) | Health Informatics | Credentialed MIMIC-IV/eICU; retain the original extraction, time-zero and endpoint contracts. |
+| [Patient reuse and apparent transcriptomic diagnostic performance](pipelines/transcriptomic-patient-reuse.md) | Trustworthy AI | Acquire source transcriptomic cohorts under their terms. No participant-level analytical inputs are uploaded. |
+| [Source information limits in synthetic validation](pipelines/synthetic-validation-source-limits.md) | Trustworthy AI | Synthetic experiment generators and separately acquired public benchmark inputs. Generated rows are not bundled. |
+| [Specification sensitivity in retrospective ICU evaluation](pipelines/icu-specification-sensitivity.md) | Prediction Modelling | Credentialed MIMIC-IV/eICU source tables; all patient-level products remain private. |
+| [Stability and clinical interpretation of kidney risk models](pipelines/nhanes-kidney-risk-stability.md) | Prediction Modelling | Public-use NHANES; frozen specifications and acquisition requirements are retained. |
+| [Excision selection and melanoma assessment](pipelines/melanoma-excision-selection.md) | Biomedical Imaging | Obtain original lesion-level inputs from the source providers. Selection endpoints and split constraints remain as coded. |
+| [False positives and sample reuse in pulmonary-nodule assessment](pipelines/pulmonary-nodule-transcriptomic-audit.md) | Trustworthy AI | Original public expression cohorts must be acquired separately; coded patient rows and predictions are not redistributed. |
+| [MRI and clinical prediction of pathological complete response](pipelines/breast-mri-response-prediction.md) | Biomedical Imaging | Acquire I-SPY1/I-SPY2 source images, clinical data and outcome files under their original terms. |
+| [Adaptive versus fixed smartwatch task acquisition](pipelines/pads-adaptive-acquisition.md) | AI for Health | PADS 1.0.0 from PhysioNet, CC BY-NC-SA 4.0. Acquire source recordings separately. |
+| [Eating disorder dynamics across everyday moments](pipelines/eatingdisordermlvar.md) | Health Informatics | Authorized EMA CSV · R |
+
 ## Open the code. Ask another question.
 
 The most interesting part of sharing a project is seeing what someone else notices. If you spot a fragile assumption, have a better approach, or want to explore a related problem, [open an issue in the relevant repository](https://github.com/terry0809000?tab=repositories). Thoughtful questions are welcome.

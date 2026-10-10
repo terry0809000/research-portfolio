@@ -196,5 +196,104 @@
     "methods": "Clinical-text preparation, TF-IDF baselines, frozen embeddings, fine-tuning and benchmark evaluation.",
     "access": "Authorized MIMIC-III text / MIMIC-SBDH annotations",
     "boundary": "Access-controlled clinical text must remain in an authorized environment."
+  },
+  {
+    "repo": "icu-six-hour-lab-prediction",
+    "title": "Six-hour ICU laboratory prediction",
+    "area": "Health Informatics",
+    "question": "What can routinely collected intensive care data tell us about laboratory measurements six hours ahead?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0; extraction paths must point to your authorized archives.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "icu-temporal-measurement-benchmark",
+    "title": "Temporal measurement and source availability benchmark",
+    "area": "Health Informatics",
+    "question": "How does measurement timing and source availability shape retrospective ICU evaluation?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Credentialed MIMIC-IV/eICU; retain the original extraction, time-zero and endpoint contracts.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "transcriptomic-patient-reuse",
+    "title": "Patient reuse and apparent transcriptomic diagnostic performance",
+    "area": "Trustworthy AI",
+    "question": "How does patient reuse affect apparent transcriptomic diagnostic performance?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Acquire source transcriptomic cohorts under their terms. No participant-level analytical inputs are uploaded.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "synthetic-validation-source-limits",
+    "title": "Source information limits in synthetic validation",
+    "area": "Trustworthy AI",
+    "question": "What can synthetic validation establish when source information is limited?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Synthetic experiment generators and separately acquired public benchmark inputs. Generated rows are not bundled.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "icu-specification-sensitivity",
+    "title": "Specification sensitivity in retrospective ICU evaluation",
+    "area": "Prediction Modelling",
+    "question": "How do analysis specifications change retrospective ICU evaluation?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Credentialed MIMIC-IV/eICU source tables; all patient-level products remain private.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "nhanes-kidney-risk-stability",
+    "title": "Stability and clinical interpretation of kidney risk models",
+    "area": "Prediction Modelling",
+    "question": "How stable and clinically interpretable are kidney risk models?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Public-use NHANES; frozen specifications and acquisition requirements are retained.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "melanoma-excision-selection",
+    "title": "Excision selection and melanoma assessment",
+    "area": "Biomedical Imaging",
+    "question": "How does excision selection affect melanoma assessment?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Obtain original lesion-level inputs from the source providers. Selection endpoints and split constraints remain as coded.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "pulmonary-nodule-transcriptomic-audit",
+    "title": "False positives and sample reuse in pulmonary-nodule assessment",
+    "area": "Trustworthy AI",
+    "question": "How do false positives and sample reuse affect pulmonary-nodule assessment?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Original public expression cohorts must be acquired separately; coded patient rows and predictions are not redistributed.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "breast-mri-response-prediction",
+    "title": "MRI and clinical prediction of pathological complete response",
+    "area": "Biomedical Imaging",
+    "question": "What can MRI and clinical information tell us about pathological complete response?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Acquire I-SPY1/I-SPY2 source images, clinical data and outcome files under their original terms.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "pads-adaptive-acquisition",
+    "title": "Adaptive versus fixed smartwatch task acquisition",
+    "area": "AI for Health",
+    "question": "How does adaptive smartwatch task acquisition compare with fixed acquisition?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "PADS 1.0.0 from PhysioNet, CC BY-NC-SA 4.0. Acquire source recordings separately.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+  },
+  {
+    "repo": "eatingdisordermlvar",
+    "title": "Eating disorder dynamics across everyday moments",
+    "area": "Health Informatics",
+    "question": "How do eating-related symptoms, affect and maladaptive exercise connect across EMA surveys?",
+    "methods": "R workflow comparing base and additive contemporaneous and temporal networks, with same-participant and same-day survey lags.",
+    "access": "Authorized EMA CSV · R",
+    "boundary": "Associational networks in exercise-target observations; not causal effects or individual diagnosis."
   }
 ]
