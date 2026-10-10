@@ -1,5 +1,10 @@
 # Temporal liver elastography triage
 
+**Portfolio home:** Computer Vision & Biomedical Imaging  
+**Related direction:** Prediction Modelling  
+**Cross-subject scope:** Elastography-derived triage; tabular measurements, not raw-image learning.
+
+
 **Prediction Modelling** · Public-use NHANES; cohort extraction and availability rules are in source code.
 
 ## The question
