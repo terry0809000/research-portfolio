@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Availability-aware EHR modelling
 
 ![Conceptual scientific cover](https://raw.githubusercontent.com/terry0809000/ash-ehr-availability/main/assets/project-cover.png)

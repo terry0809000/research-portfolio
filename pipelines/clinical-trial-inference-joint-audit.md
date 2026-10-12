@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Clinical trial inference: reference and answer-mapping sensitivity
 
 **Clinical NLP** · Obtain source trial reports and model checkpoints using original acquisition scripts; third-party texts and model weights excluded.

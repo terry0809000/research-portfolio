@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 <p align="center"><img src="https://raw.githubusercontent.com/terry0809000/synthetic-validation-source-limits/main/assets/project-cover.png" width="100%" alt="Conceptual artwork for Source information limits in synthetic validation" /></p>
 
 # Source information limits in synthetic validation

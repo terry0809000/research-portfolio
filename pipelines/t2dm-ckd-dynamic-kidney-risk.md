@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Dynamic major adverse kidney-event prediction in T2DM and CKD
 
 ![Conceptual scientific cover](https://raw.githubusercontent.com/terry0809000/t2dm-ckd-dynamic-kidney-risk/main/assets/project-cover.png)

@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Relative and absolute augmentation gains under observation loss
 
 ![Conceptual scientific cover](https://raw.githubusercontent.com/terry0809000/clinical-observation-loss-augmentation/main/assets/project-cover.png)

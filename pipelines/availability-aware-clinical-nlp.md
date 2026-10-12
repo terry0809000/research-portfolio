@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Availability-aware source selection for clinical NLP
 
 **Clinical NLP** · Original source reports, model checkpoints, E3C and authorized laboratory inputs are obtained separately.

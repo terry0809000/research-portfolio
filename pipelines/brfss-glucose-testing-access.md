@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Healthcare access and glucose-testing gaps
 
 **Health Informatics** · Public-use BRFSS 2024 and 2025; acquire upstream source files locally.

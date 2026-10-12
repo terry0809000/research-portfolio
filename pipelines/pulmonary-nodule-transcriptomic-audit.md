@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 <p align="center"><img src="https://raw.githubusercontent.com/terry0809000/pulmonary-nodule-transcriptomic-audit/main/assets/project-cover.png" width="100%" alt="Conceptual artwork for False positives and sample reuse in pulmonary-nodule assessment" /></p>
 
 # False positives and sample reuse in pulmonary-nodule assessment

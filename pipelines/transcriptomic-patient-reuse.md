@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 <p align="center"><img src="https://raw.githubusercontent.com/terry0809000/transcriptomic-patient-reuse/main/assets/project-cover.png" width="100%" alt="Conceptual artwork for Patient reuse and apparent transcriptomic diagnostic performance" /></p>
 
 # Patient reuse and apparent transcriptomic diagnostic performance

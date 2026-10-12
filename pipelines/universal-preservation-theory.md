@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # Universal preservation under stochastic transformations
 
 ![Conceptual scientific cover](https://raw.githubusercontent.com/terry0809000/universal-preservation-theory/main/assets/project-cover.png)
@@ -17,6 +19,10 @@ This repository contains finite-alphabet calculations, LP candidate searches and
 Finite-alphabet enumeration, LP candidate search and exact rational certificate checking.
 
 Finite-alphabet numerical examples, certificates and synthetic experiments.
+
+## Current source edition
+
+The latest observation-order study provides exact three-state conditions and a four-state obstruction. [The source edition](https://github.com/terry0809000/universal-preservation-theory/tree/main/releases/observation-order-20261011) keeps its implementation separate from the earlier release; fixed synthetic certificate records are external prerequisites for archived-result replay. This is an update of the existing research line, not a second counted project.
 
 ## Scope
 

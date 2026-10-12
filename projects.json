@@ -166,15 +166,15 @@
   {
     "repo": "liver-elastography-temporal-triage",
     "title": "Temporal liver elastography triage",
-    "area": "Computer Vision & Biomedical Imaging",
+    "area": "Prediction Modelling",
     "question": "How do temporal evaluation and sensitivity targets affect liver elastography triage?",
     "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
     "access": "Public-use NHANES; cohort extraction and availability rules are in source code.",
     "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
     "secondary_areas": [
-      "Prediction Modelling"
+      "Computer Vision & Biomedical Imaging"
     ],
-    "classification_note": "Elastography-derived triage; tabular measurements, not raw-image learning",
+    "classification_note": "Prediction from elastography-derived measurements; no image-pixel classifier",
     "original_domain": "Prediction Modelling"
   },
   {
@@ -257,15 +257,15 @@
   {
     "repo": "transcriptomic-patient-reuse",
     "title": "Patient reuse and apparent transcriptomic diagnostic performance",
-    "area": "AI for Health",
+    "area": "Trustworthy AI",
     "question": "How does patient reuse affect apparent transcriptomic diagnostic performance?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Acquire source transcriptomic cohorts under their terms. No participant-level analytical inputs are uploaded.",
     "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
     "secondary_areas": [
-      "Trustworthy AI"
+      "AI for Health"
     ],
-    "classification_note": "Transcriptomic diagnostics and patient-reuse evaluation",
+    "classification_note": "Patient reuse and evaluation validity are the main research question",
     "original_domain": "Trustworthy AI"
   },
   {
@@ -294,15 +294,15 @@
   {
     "repo": "nhanes-kidney-risk-stability",
     "title": "Stability and clinical interpretation of kidney risk models",
-    "area": "Health Informatics",
+    "area": "Prediction Modelling",
     "question": "How stable and clinically interpretable are kidney risk models?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Public-use NHANES; frozen specifications and acquisition requirements are retained.",
     "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
     "secondary_areas": [
-      "Prediction Modelling"
+      "Health Informatics"
     ],
-    "classification_note": "Population survey data and kidney-risk interpretation",
+    "classification_note": "Stability and interpretation of kidney-risk prediction",
     "original_domain": "Prediction Modelling"
   },
   {
@@ -318,15 +318,15 @@
   {
     "repo": "pulmonary-nodule-transcriptomic-audit",
     "title": "False positives and sample reuse in pulmonary-nodule assessment",
-    "area": "AI for Health",
+    "area": "Trustworthy AI",
     "question": "How do false positives and sample reuse affect pulmonary-nodule assessment?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Original public expression cohorts must be acquired separately; coded patient rows and predictions are not redistributed.",
     "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
     "secondary_areas": [
-      "Trustworthy AI"
+      "AI for Health"
     ],
-    "classification_note": "Transcriptomic pulmonary-nodule assessment; not CT image analysis",
+    "classification_note": "False positives and sample reuse are the main evaluation-audit question",
     "original_domain": "Trustworthy AI"
   },
   {
@@ -532,5 +532,70 @@
     "methods": "AKI raw-archive cohort construction, tabular/temporal models, external evaluation and local calibration/updating.",
     "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Original records, individual predictions, original hospital identifiers and fitted weights are excluded.",
     "boundary": "Cross-database differences and extraction scope limit transportability; retrospective updating is not prospective deployment evidence."
+  },
+  {
+    "repo": "emt-collagen-survival",
+    "title": "EMT and collagen in colon-cancer survival",
+    "area": "Prediction Modelling",
+    "question": "How do EMT and a three-gene collagen proxy compare for survival prediction in an external colon-cancer cohort?",
+    "methods": "Cohort-specific preprocessing, penalized survival models, fixed-score reconstruction and paired uncertainty.",
+    "access": "Acquire public GEO cohorts and MSigDB inputs separately under their source terms.",
+    "boundary": "An exploratory external-cohort comparison; a small uncertain concordance difference does not establish superiority, equivalence or clinical utility.",
+    "secondary_areas": [
+      "AI for Health"
+    ],
+    "classification_note": "Molecular scores evaluated for a time-to-event prediction endpoint"
+  },
+  {
+    "repo": "cross-hospital-histopathology-comparison",
+    "title": "Histopathology models across hospitals",
+    "area": "Computer Vision & Biomedical Imaging",
+    "question": "How do discrimination, probability reliability and computational cost change across hospitals for four pretrained image models?",
+    "methods": "Patient-grouped CAMELYON17-WILDS evaluation, source-only model selection, paired uncertainty and model-only timing.",
+    "access": "Acquire CAMELYON17-WILDS v1.0 and pretrained checkpoints separately.",
+    "boundary": "A fixed source-only comparison of four named ImageNet checkpoints; no universal ranking, equivalence or clinical benefit is established.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Image classification is the primary task; reliability and cost are evaluation dimensions"
+  },
+  {
+    "repo": "clinical-trial-probability-transfer",
+    "title": "Probability quality in clinical-trial inference",
+    "area": "Clinical NLP",
+    "question": "How do six small language models differ in probability quality and selective transfer under paired answer-order changes?",
+    "methods": "Frozen two-order scoring, development-fitted calibration, paired Brier contrasts and selective-risk diagnostics.",
+    "access": "Acquire pinned SemEval-2024 Task 2 inputs and authorized model revisions separately.",
+    "boundary": "Paired benchmark evidence does not establish clinical utility; exploratory post-outcome order policies do not replace the primary policy.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Clinical trial text inference is primary; selective prediction is a cross-cutting evaluation"
+  },
+  {
+    "repo": "ecg-label-budget-model-comparison",
+    "title": "ECG models under label and sampling budgets",
+    "area": "AI for Health",
+    "question": "How do ECG model comparisons change with training-label budgets, sampling rates and computational cost?",
+    "methods": "PTB-XL patient-disjoint folds, shared deterministic subsets, multi-seed model comparison and paired patient bootstrap.",
+    "access": "Acquire PTB-XL v1.0.3 directly from PhysioNet under its terms.",
+    "boundary": "A controlled retrospective multi-label benchmark; hardware-specific timing and model comparisons do not establish clinical readiness.",
+    "secondary_areas": [
+      "Prediction Modelling"
+    ],
+    "classification_note": "Physiological-signal learning is primary; this is distinct from perturbation-based ECG reliability screening"
+  },
+  {
+    "repo": "clinical-annotation-option-identity",
+    "title": "Option identity in clinical annotation software",
+    "area": "Health Informatics",
+    "question": "Does an annotation option retain its identity through display, saving, decoding and aggregation?",
+    "methods": "Pinned source witnesses, synthetic semantic transport cases and stage-by-stage identity checks.",
+    "access": "Synthetic cases and pinned public software source; original native ratings are excluded.",
+    "boundary": "Source incompatibility is distinct from historical deployment attribution; conditional native representations are not corrected clinical truth.",
+    "secondary_areas": [
+      "Trustworthy AI"
+    ],
+    "classification_note": "Annotation software semantics and interoperability are primary, rather than clinical-text model prediction"
   }
 ]

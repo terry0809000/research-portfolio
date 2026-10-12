@@ -1,3 +1,5 @@
+[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+
 # ECG reliability screening with fixed calibration
 
 ![Conceptual scientific cover](https://raw.githubusercontent.com/terry0809000/earlybird-ecg-reliability/main/assets/project-cover.png)
