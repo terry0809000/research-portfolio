@@ -2,100 +2,55 @@
   {
     "title": "Clinical NLP",
     "id": "clinical-nlp",
-    "intro": "Clinical and biomedical language sit at the centre of this direction, alongside reading and rationale benchmarks that help examine how language models behave.",
+    "intro": "Clinical and biomedical text classification, transfer across corpora, and calibration beyond headline metrics.",
     "repos": [
       "MIMIC_SBDH",
       "biomedical-abstract-sentence-classification",
-      "clinical-trial-inference-joint-audit",
-      "availability-aware-clinical-nlp",
-      "beyond-macro-f1-pubmed-rct-public",
-      "hatespeechcheck",
-      "zuco2-scientific-ml-pipeline",
-      "clinical-trial-probability-transfer"
+      "beyond-macro-f1-pubmed-rct-public"
     ]
   },
   {
-    "title": "Computer Vision & Biomedical Imaging",
+    "title": "Computer Vision",
     "id": "biomedical-imaging",
-    "intro": "Medical image classification and MRI reconstruction, with explicit attention to patient separation, reliability and what an image model actually measures.",
+    "intro": "Skin-lesion referral and MRI response prediction, with attention to evaluation boundaries and reliability.",
     "repos": [
       "ham10000-trustworthy-skin-ai",
-      "melanoma-excision-selection",
-      "breast-mri-response-prediction",
-      "cvpath-color-response-screening",
-      "mri-calibration-noise",
-      "cross-hospital-histopathology-comparison"
+      "breast-mri-response-prediction"
     ]
   },
   {
     "title": "Trustworthy AI",
     "id": "trustworthy-ai",
-    "intro": "A strong headline metric is only the beginning. These projects examine calibration, sample reuse, source information and fragile evaluation choices.",
+    "intro": "Reliability across hospitals and measurement patterns, and the limits of what incomplete evidence can establish.",
     "repos": [
-      "safelabs-icu-lab-deferral",
-      "synthetic-validation-source-limits",
-      "icu-outcome-ascertainment",
-      "clinical-uncertainty-identification",
-      "universal-preservation-theory",
-      "fixed-target-forecast-revisions",
-      "chronoshield-icu",
-      "ehr-missingness-model-selection",
-      "icu-specification-sensitivity",
-      "transcriptomic-patient-reuse",
-      "pulmonary-nodule-transcriptomic-audit"
+      "icu-measurement-aware-prediction",
+      "clinical-uncertainty-identification"
     ]
   },
   {
     "title": "Prediction Modelling",
     "id": "prediction-modelling",
-    "intro": "Clinical and molecular prediction across time, hospitals and cohorts. The endpoint, evaluation design and uncertainty stay visible.",
+    "intro": "Dynamic AKI prediction under temporal evaluation, external transport and deployment constraints.",
     "repos": [
-      "ards-ahrf-ehr-temporal-validation",
-      "nhanes-temporal-diabetes-screening",
-      "copd-asthma-extubation-transportability",
-      "aki-dynamic-prediction-deployment-gated",
-      "ami-cs-dynamic-risk-modeling",
-      "sepsis-shock-ai-medicine-v9",
-      "hypernatremia-incremental-prediction",
-      "vasopressor-incremental-value",
-      "t2dm-ckd-dynamic-kidney-risk",
-      "aki-progression-transportability",
-      "liver-elastography-temporal-triage",
-      "nhanes-kidney-risk-stability",
-      "emt-collagen-survival"
+      "aki-dynamic-prediction-deployment-gated"
     ]
   },
   {
     "title": "Health Informatics",
     "id": "health-informatics",
-    "intro": "How we collect and record data is part of the story. These workflows connect clinical measurement, population surveys, surveillance and access to care.",
+    "intro": "ICU laboratory forecasting and eating-disorder dynamics across everyday observations.",
     "repos": [
-      "brfss-glucose-testing-access",
       "icu-six-hour-lab-prediction",
-      "icu-temporal-measurement-benchmark",
-      "eatingdisordermlvar",
-      "nhis-affordability-testing-gaps",
-      "ash-ehr-availability",
-      "icu-documentation-counts",
-      "icu-measurement-aware-prediction",
-      "bmc-dm-prediction-one-week",
-      "clinical-annotation-option-identity"
+      "eatingdisordermlvar"
     ]
   },
   {
     "title": "AI for Health",
     "id": "ai-for-health",
-    "intro": "From molecular variation to sleep and movement, I build tools to explore health questions across different scales.",
+    "intro": "Sleep staging and adaptive smartwatch acquisition.",
     "repos": [
-      "trace-fib-pipeline",
       "sleepingedf",
-      "dkd-bex3-preprocessing",
-      "pads-adaptive-acquisition",
-      "sleep-duration-selective-review",
-      "earlybird-ecg-reliability",
-      "objective-physiological-phenotyping",
-      "clinical-observation-loss-augmentation",
-      "ecg-label-budget-model-comparison"
+      "pads-adaptive-acquisition"
     ]
   }
 ]

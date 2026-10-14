@@ -1,13 +1,22 @@
 [
   {
-    "repo": "trace-fib-pipeline",
-    "title": "TRACE-Fib",
-    "area": "AI for Health",
-    "question": "How do normalization and study weighting affect cross-organ transfer?",
-    "methods": "Frozen open-data inputs, study-aware evaluation and sensitivity analysis.",
-    "access": "CPU · public deposit",
-    "boundary": "A bounded retrospective reanalysis; nominal source units are not independently verified people.",
-    "original_domain": "Computational biology"
+    "repo": "MIMIC_SBDH",
+    "title": "Social and behavioural determinants from clinical text",
+    "area": "Clinical NLP",
+    "question": "How do conventional and transformer models compare for SBDH classification?",
+    "methods": "Clinical-text preparation, TF-IDF baselines, frozen embeddings, fine-tuning and benchmark evaluation.",
+    "access": "Authorized MIMIC-III text / MIMIC-SBDH annotations",
+    "boundary": "Access-controlled clinical text must remain in an authorized environment."
+  },
+  {
+    "repo": "biomedical-abstract-sentence-classification",
+    "title": "Cross-corpus abstract classification",
+    "area": "Clinical NLP",
+    "question": "How do lightweight sentence classifiers transfer between corpora?",
+    "methods": "Split-aware preprocessing, calibration and cross-corpus evaluation.",
+    "access": "CPU · public text corpora",
+    "boundary": "Read version-specific evidence; the local revision can be newer than the public release.",
+    "original_domain": "Biomedical NLP"
   },
   {
     "repo": "beyond-macro-f1-pubmed-rct-public",
@@ -26,7 +35,7 @@
   {
     "repo": "ham10000-trustworthy-skin-ai",
     "title": "Selective skin-lesion referral",
-    "area": "Computer Vision & Biomedical Imaging",
+    "area": "Computer Vision",
     "question": "How do calibration and abstention change model evaluation?",
     "methods": "Lesion-level splitting, temperature scaling, risk–coverage analysis and subgroup audits.",
     "access": "Python · acquire source images",
@@ -34,62 +43,37 @@
     "original_domain": "Medical imaging"
   },
   {
-    "repo": "ards-ahrf-ehr-temporal-validation",
-    "title": "ARDS / AHRF temporal validation",
-    "area": "Prediction Modelling",
-    "question": "How does model performance change across time and ICU databases?",
-    "methods": "Time-indexed EHR modelling, site shift, calibration and missingness audits.",
-    "access": "Credentialed MIMIC-IV / eICU",
-    "boundary": "Research software; patient-level inputs stay in the authorized environment.",
-    "original_domain": "Clinical prediction"
+    "repo": "breast-mri-response-prediction",
+    "title": "MRI and clinical prediction of pathological complete response",
+    "area": "Computer Vision",
+    "question": "What can MRI and clinical information tell us about pathological complete response?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "Acquire I-SPY1/I-SPY2 source images, clinical data and outcome files under their original terms.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+    "original_domain": "Biomedical Imaging"
   },
   {
-    "repo": "zuco2-scientific-ml-pipeline",
-    "title": "Reading dynamics with ZuCo 2.0",
-    "area": "Clinical NLP",
-    "question": "Can lexical and early-fixation features predict later processing load?",
-    "methods": "An installable package for HDF5 extraction, grouped evaluation and reproducible configurations.",
-    "access": "Python package · acquire ZuCo",
-    "boundary": "Grouped benchmark performance does not establish a general cognitive mechanism.",
+    "repo": "icu-measurement-aware-prediction",
+    "title": "Measurement-aware ICU prediction",
+    "area": "Trustworthy AI",
+    "question": "How do measurement patterns affect retrospective ICU prediction?",
+    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private.",
+    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
     "secondary_areas": [
-      "AI for Health"
+      "Prediction Modelling"
     ],
-    "classification_note": "Reading, lexical features and eye tracking; not a clinical cohort",
-    "original_domain": "Cognitive data science"
+    "classification_note": "Clinical measurement processes and retrospective EHR prediction",
+    "original_domain": "Prediction Modelling"
   },
   {
-    "repo": "bmc-dm-prediction-one-week",
-    "title": "Respiratory surveillance",
-    "area": "Health Informatics",
-    "question": "Can aggregate surveillance signals anticipate next-week escalation?",
-    "methods": "Rolling-origin validation, chronological holdout and state-cluster uncertainty.",
-    "access": "CPU · public aggregate surveillance",
-    "boundary": "A later holdout within one surveillance ecosystem is not external validation.",
-    "secondary_areas": [
-      "AI for Health"
-    ],
-    "classification_note": "Public-health surveillance and rolling forecasts",
-    "original_domain": "Public health"
-  },
-  {
-    "repo": "nhanes-temporal-diabetes-screening",
-    "title": "Temporal screening evaluation",
-    "area": "Prediction Modelling",
-    "question": "Does model complexity improve probability estimation under temporal shift?",
-    "methods": "Survey-weighted evaluation, calibration and a prespecified complexity-value gate.",
-    "access": "Python · public-use NHANES",
-    "boundary": "The complexity-value gate failed; one HbA1c measurement is not confirmed diabetes.",
-    "original_domain": "Clinical prediction"
-  },
-  {
-    "repo": "copd-asthma-extubation-transportability",
-    "title": "Extubation transportability",
-    "area": "Prediction Modelling",
-    "question": "How does endpoint construction affect cross-database transport?",
-    "methods": "Endpoint reconstruction, source-only transport and calibration diagnostics.",
-    "access": "Credentialed MIMIC-IV / eICU",
-    "boundary": "Endpoint repair and external validation do not establish clinical readiness.",
-    "original_domain": "Clinical prediction"
+    "repo": "clinical-uncertainty-identification",
+    "title": "Clinical prediction uncertainty and identification",
+    "area": "Trustworthy AI",
+    "question": "Which clinical prediction conclusions can the available evidence identify?",
+    "methods": "Exact rational identification checks, bounded correction and explicitly synthetic audit simulations.",
+    "access": "Analytical examples and explicitly synthetic simulations; no patient dataset required for the analytical checks.",
+    "boundary": "Stipulated simulation assumptions and computational checks do not establish clinical effectiveness."
   },
   {
     "repo": "aki-dynamic-prediction-deployment-gated",
@@ -102,250 +86,12 @@
     "original_domain": "Clinical prediction"
   },
   {
-    "repo": "biomedical-abstract-sentence-classification",
-    "title": "Cross-corpus abstract classification",
-    "area": "Clinical NLP",
-    "question": "How do lightweight sentence classifiers transfer between corpora?",
-    "methods": "Split-aware preprocessing, calibration and cross-corpus evaluation.",
-    "access": "CPU · public text corpora",
-    "boundary": "Read version-specific evidence; the local revision can be newer than the public release.",
-    "original_domain": "Biomedical NLP"
-  },
-  {
-    "repo": "sleepingedf",
-    "title": "Sleep-EDF staging",
-    "area": "AI for Health",
-    "question": "How do local context, channel choice and smoothing affect sleep staging?",
-    "methods": "Record-aware evaluation, channel ablations and repeated-seed comparisons.",
-    "access": "Acquire Sleep-EDF",
-    "boundary": "Sequence smoothing can trade off different metrics; preserve record boundaries.",
-    "original_domain": "Physiological signals"
-  },
-  {
-    "repo": "hatespeechcheck",
-    "title": "Rationale reliability audit",
-    "area": "Clinical NLP",
-    "question": "Do supporting rationales remain faithful and robust?",
-    "methods": "Rationale evaluation, calibration, functional checks and subgroup diagnostics.",
-    "access": "Python · acquire benchmark data",
-    "boundary": "Benchmark audits do not certify fairness or suitability for automated moderation.",
-    "secondary_areas": [
-      "Trustworthy AI"
-    ],
-    "classification_note": "General NLP rationale benchmark; not clinical text",
-    "original_domain": "Responsible NLP"
-  },
-  {
-    "repo": "safelabs-icu-lab-deferral",
-    "title": "SAFE-LABS",
-    "area": "Trustworthy AI",
-    "question": "How can a selective-prediction policy be tested without overstating safety?",
-    "methods": "Protocol, synthetic fixtures and exploratory empirical adapters.",
-    "access": "Synthetic validation / protocol",
-    "boundary": "Empirical outputs remain outside the public release pending named disclosure review.",
-    "original_domain": "Research methods"
-  },
-  {
-    "repo": "brfss-glucose-testing-access",
-    "title": "Healthcare access and glucose-testing gaps",
-    "area": "Health Informatics",
-    "question": "How do healthcare access and glucose-testing gaps vary in public-use survey data?",
-    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
-    "access": "Public-use BRFSS 2024 and 2025; acquire upstream source files locally.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "dkd-bex3-preprocessing",
-    "title": "Preprocessing sensitivity of glomerular BEX3 prioritisation",
-    "area": "AI for Health",
-    "question": "How sensitive is glomerular BEX3 prioritisation to preprocessing choices?",
-    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
-    "access": "Public GEO and annotated kidney expression sources; obtain original inputs from their providers.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "liver-elastography-temporal-triage",
-    "title": "Temporal liver elastography triage",
-    "area": "Prediction Modelling",
-    "question": "How do temporal evaluation and sensitivity targets affect liver elastography triage?",
-    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
-    "access": "Public-use NHANES; cohort extraction and availability rules are in source code.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
-    "secondary_areas": [
-      "Computer Vision & Biomedical Imaging"
-    ],
-    "classification_note": "Prediction from elastography-derived measurements; no image-pixel classifier",
-    "original_domain": "Prediction Modelling"
-  },
-  {
-    "repo": "clinical-trial-inference-joint-audit",
-    "title": "Clinical trial inference: reference and answer-mapping sensitivity",
-    "area": "Clinical NLP",
-    "question": "How do reference choices and answer mapping affect clinical-trial inference?",
-    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
-    "access": "Obtain source trial reports and model checkpoints using original acquisition scripts; third-party texts and model weights excluded.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "availability-aware-clinical-nlp",
-    "title": "Availability-aware source selection for clinical NLP",
-    "area": "Clinical NLP",
-    "question": "How does source availability affect clinical NLP evaluation?",
-    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
-    "access": "Original source reports, model checkpoints, E3C and authorized laboratory inputs are obtained separately.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "icu-measurement-aware-prediction",
-    "title": "Measurement-aware retrospective ICU prediction",
-    "area": "Health Informatics",
-    "question": "How do measurement patterns affect retrospective ICU prediction?",
-    "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
-    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private.",
-    "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
-    "secondary_areas": [
-      "Prediction Modelling"
-    ],
-    "classification_note": "Clinical measurement processes and retrospective EHR prediction",
-    "original_domain": "Prediction Modelling"
-  },
-  {
-    "repo": "ami-cs-dynamic-risk-modeling",
-    "title": "AMI-CS dynamic risk modelling",
-    "area": "Prediction Modelling",
-    "question": "How do shock anchors and dynamic predictors affect cross-database risk modelling?",
-    "methods": "Shock-anchored cohort construction, static and hourly dynamic modelling, calibration and bidirectional transport.",
-    "access": "Credentialed MIMIC-IV / eICU",
-    "boundary": "Retrospective research with source-specific governance and deployment limits."
-  },
-  {
-    "repo": "sepsis-shock-ai-medicine-v9",
-    "title": "Sepsis-to-shock temporal prediction",
-    "area": "Prediction Modelling",
-    "question": "How does temporal landmark modelling transport across ICU databases?",
-    "methods": "Sepsis-to-shock landmark prediction, source recalibration and cross-database evaluation.",
-    "access": "Credentialed MIMIC-IV / eICU",
-    "boundary": "Locked reported metrics belong to the XGBoost branch; they do not establish Transformer superiority."
-  },
-  {
-    "repo": "MIMIC_SBDH",
-    "title": "Social and behavioural determinants from clinical text",
-    "area": "Clinical NLP",
-    "question": "How do conventional and transformer models compare for SBDH classification?",
-    "methods": "Clinical-text preparation, TF-IDF baselines, frozen embeddings, fine-tuning and benchmark evaluation.",
-    "access": "Authorized MIMIC-III text / MIMIC-SBDH annotations",
-    "boundary": "Access-controlled clinical text must remain in an authorized environment."
-  },
-  {
     "repo": "icu-six-hour-lab-prediction",
     "title": "Six-hour ICU laboratory prediction",
     "area": "Health Informatics",
     "question": "What can routinely collected intensive care data tell us about laboratory measurements six hours ahead?",
     "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
     "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0; extraction paths must point to your authorized archives.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "icu-temporal-measurement-benchmark",
-    "title": "Temporal measurement and source availability benchmark",
-    "area": "Health Informatics",
-    "question": "How does measurement timing and source availability shape retrospective ICU evaluation?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Credentialed MIMIC-IV/eICU; retain the original extraction, time-zero and endpoint contracts.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "transcriptomic-patient-reuse",
-    "title": "Patient reuse and apparent transcriptomic diagnostic performance",
-    "area": "Trustworthy AI",
-    "question": "How does patient reuse affect apparent transcriptomic diagnostic performance?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Acquire source transcriptomic cohorts under their terms. No participant-level analytical inputs are uploaded.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
-    "secondary_areas": [
-      "AI for Health"
-    ],
-    "classification_note": "Patient reuse and evaluation validity are the main research question",
-    "original_domain": "Trustworthy AI"
-  },
-  {
-    "repo": "synthetic-validation-source-limits",
-    "title": "Source information limits in synthetic validation",
-    "area": "Trustworthy AI",
-    "question": "What can synthetic validation establish when source information is limited?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Synthetic experiment generators and separately acquired public benchmark inputs. Generated rows are not bundled.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
-  },
-  {
-    "repo": "icu-specification-sensitivity",
-    "title": "Specification sensitivity in retrospective ICU evaluation",
-    "area": "Trustworthy AI",
-    "question": "How do analysis specifications change retrospective ICU evaluation?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Credentialed MIMIC-IV/eICU source tables; all patient-level products remain private.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
-    "original_domain": "Prediction Modelling",
-    "secondary_areas": [
-      "Prediction Modelling"
-    ],
-    "classification_note": "Analysis-specification sensitivity and retrospective prediction evaluation"
-  },
-  {
-    "repo": "nhanes-kidney-risk-stability",
-    "title": "Stability and clinical interpretation of kidney risk models",
-    "area": "Prediction Modelling",
-    "question": "How stable and clinically interpretable are kidney risk models?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Public-use NHANES; frozen specifications and acquisition requirements are retained.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
-    "secondary_areas": [
-      "Health Informatics"
-    ],
-    "classification_note": "Stability and interpretation of kidney-risk prediction",
-    "original_domain": "Prediction Modelling"
-  },
-  {
-    "repo": "melanoma-excision-selection",
-    "title": "Excision selection and melanoma assessment",
-    "area": "Computer Vision & Biomedical Imaging",
-    "question": "How does excision selection affect melanoma assessment?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Obtain original lesion-level inputs from the source providers. Selection endpoints and split constraints remain as coded.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
-    "original_domain": "Biomedical Imaging"
-  },
-  {
-    "repo": "pulmonary-nodule-transcriptomic-audit",
-    "title": "False positives and sample reuse in pulmonary-nodule assessment",
-    "area": "Trustworthy AI",
-    "question": "How do false positives and sample reuse affect pulmonary-nodule assessment?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Original public expression cohorts must be acquired separately; coded patient rows and predictions are not redistributed.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
-    "secondary_areas": [
-      "AI for Health"
-    ],
-    "classification_note": "False positives and sample reuse are the main evaluation-audit question",
-    "original_domain": "Trustworthy AI"
-  },
-  {
-    "repo": "breast-mri-response-prediction",
-    "title": "MRI and clinical prediction of pathological complete response",
-    "area": "Computer Vision & Biomedical Imaging",
-    "question": "What can MRI and clinical information tell us about pathological complete response?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "Acquire I-SPY1/I-SPY2 source images, clinical data and outcome files under their original terms.",
-    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
-    "original_domain": "Biomedical Imaging"
-  },
-  {
-    "repo": "pads-adaptive-acquisition",
-    "title": "Adaptive versus fixed smartwatch task acquisition",
-    "area": "AI for Health",
-    "question": "How does adaptive smartwatch task acquisition compare with fixed acquisition?",
-    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
-    "access": "PADS 1.0.0 from PhysioNet, CC BY-NC-SA 4.0. Acquire source recordings separately.",
     "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
   },
   {
@@ -358,244 +104,22 @@
     "boundary": "Associational networks in exercise-target observations; not causal effects or individual diagnosis."
   },
   {
-    "repo": "nhis-affordability-testing-gaps",
-    "title": "Healthcare affordability and testing gaps",
-    "area": "Health Informatics",
-    "question": "When care costs too much, who misses a test?",
-    "methods": "Public-use NHIS survey processing, affordability profiles and testing-gap analyses.",
-    "access": "Public-use NHIS 2024/2025 source releases; obtain source tables separately.",
-    "boundary": "Survey-based associations do not establish causal effects on access to care."
-  },
-  {
-    "repo": "hypernatremia-incremental-prediction",
-    "title": "Incremental prediction of hypernatremia",
-    "area": "Prediction Modelling",
-    "question": "What does a model add beyond routine sodium measurements?",
-    "methods": "Sodium cohort construction, temporal checks, baseline comparisons and robustness analyses.",
-    "access": "Credentialed MIMIC-IV and eICU; authorized extraction and phenotype rules are retained.",
-    "boundary": "Later optimized analyses reuse inspected evaluation populations and are not independent confirmation."
-  },
-  {
-    "repo": "vasopressor-incremental-value",
-    "title": "Incremental value of vasopressor prediction",
-    "area": "Prediction Modelling",
-    "question": "Do disease-specific treatment patterns add useful mortality predictions?",
-    "methods": "ICU extraction, disease-specific cross-fitted process encoders, baseline comparisons and robustness analysis.",
-    "access": "Credentialed ICU archives. Raw records, predictions and fitted models are kept private.",
-    "boundary": "The later hierarchy and tuning are exploratory; a stable external incremental advantage was not established."
-  },
-  {
-    "repo": "icu-outcome-ascertainment",
-    "title": "Outcome ascertainment and transportability in ICU prediction",
-    "area": "Trustworthy AI",
-    "question": "How do endpoint recording and observation timing change ICU model evaluation?",
-    "methods": "Recorded endpoint construction, observation timing, definition sensitivity and cross-database evaluation.",
-    "access": "Credentialed ICU archives; source ascertainment and availability limitations are retained.",
-    "boundary": "Implementation agreement and recorded events do not constitute independent clinical adjudication."
-  },
-  {
-    "repo": "clinical-uncertainty-identification",
-    "title": "Clinical prediction uncertainty and identification",
-    "area": "Trustworthy AI",
-    "question": "Which clinical prediction conclusions can the available evidence identify?",
-    "methods": "Exact rational identification checks, bounded correction and explicitly synthetic audit simulations.",
-    "access": "Analytical examples and explicitly synthetic simulations; no patient dataset required for the analytical checks.",
-    "boundary": "Stipulated simulation assumptions and computational checks do not establish clinical effectiveness."
-  },
-  {
-    "repo": "universal-preservation-theory",
-    "title": "Universal preservation under stochastic transformations",
-    "area": "Trustworthy AI",
-    "question": "When does a shared stochastic observation preserve decision order?",
-    "methods": "Finite-alphabet enumeration, LP candidate search and exact rational certificate checking.",
-    "access": "Finite-alphabet numerical examples, certificates and synthetic experiments.",
-    "boundary": "Finite numerical searches do not alone establish universal mathematical preservation or clinical effects."
-  },
-  {
-    "repo": "sleep-duration-selective-review",
-    "title": "Selective review and total sleep time estimation",
+    "repo": "sleepingedf",
+    "title": "Sleep-EDF staging",
     "area": "AI for Health",
-    "question": "Which sleep epochs deserve review when estimating total sleep time?",
-    "methods": "Frozen sleep predictions, review-policy calibration, reviewer rotation and fixed-fold refitting stability.",
-    "access": "Obtain source PSG/hypnograms and any licensed model weights separately; epoch-level evidence is excluded.",
-    "boundary": "Archived expert labels simulate review; the exploratory retrospective study does not establish prospective clinical utility."
+    "question": "How do local context, channel choice and smoothing affect sleep staging?",
+    "methods": "Record-aware evaluation, channel ablations and repeated-seed comparisons.",
+    "access": "Acquire Sleep-EDF",
+    "boundary": "Sequence smoothing can trade off different metrics; preserve record boundaries.",
+    "original_domain": "Physiological signals"
   },
   {
-    "repo": "cvpath-color-response-screening",
-    "title": "Color-response sensitivity for pathology error screening",
-    "area": "Computer Vision & Biomedical Imaging",
-    "question": "Can stain-perturbation responses help screen pathology classification errors?",
-    "methods": "Fixed PathMNIST224 classifiers, color-response screening scores and frozen source-to-target evaluation.",
-    "access": "PathMNIST224, CC BY 4.0; obtain from the documented Zenodo release. Training needs CUDA-capable hardware.",
-    "boundary": "Patch-level derivative data lack patient/slide identifiers; source and external partitions do not establish wholly unseen institutions."
-  },
-  {
-    "repo": "mri-calibration-noise",
-    "title": "MRI calibration-noise analysis",
-    "area": "Computer Vision & Biomedical Imaging",
-    "question": "How does sensitivity-map calibration carry added noise into MRI reconstruction?",
-    "methods": "Multicoil calibration-noise probes, descriptive replication and finite-difference diagnostics.",
-    "access": "Public source MRI releases and fixed development/evaluation splits, as specified in the original code.",
-    "boundary": "Added identity-covariance noise around noisy measured data does not estimate native scanner covariance or establish clinical generality."
-  },
-  {
-    "repo": "fixed-target-forecast-revisions",
-    "title": "Fixed-target forecast revisions under sensor outages",
-    "area": "Trustworthy AI",
-    "question": "How should a fixed-target forecast change when sensor messages arrive late?",
-    "methods": "Fixed-target time-series revisions, simulated message outages and descriptive paired actual-label losses.",
-    "access": "Public source ETT and forecasting inputs; simulated outages do not represent observed infrastructure failures.",
-    "boundary": "Repeated targets and correlated origins are not independent replications; simulated outages are not observed infrastructure failures."
-  },
-  {
-    "repo": "earlybird-ecg-reliability",
-    "title": "ECG reliability screening with fixed calibration",
+    "repo": "pads-adaptive-acquisition",
+    "title": "Adaptive versus fixed smartwatch task acquisition",
     "area": "AI for Health",
-    "question": "Can fixed calibration recognize perturbed ECG inputs without mistaking simulated labels for clinical quality?",
-    "methods": "Fixed calibration, patient-held-out perturbation screening and staged ECG test acquisition.",
-    "access": "PTB-XL and NSTDB source releases; acquire source waveforms and any noise inputs separately.",
-    "boundary": "Injected perturbation labels are not clinician-certified signal quality; source-only reproduction requires separately acquired original manifests."
-  },
-  {
-    "repo": "ash-ehr-availability",
-    "title": "Availability-aware EHR modelling",
-    "area": "Health Informatics",
-    "question": "What changes when a clinical model can use only the information actually available at prediction time?",
-    "methods": "Availability-aware EHR replay, frozen extraction and patient-clustered policy comparisons.",
-    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Patient rows, labels, predictions and models remain private.",
-    "boundary": "Credentialed inputs and genuine original review/freeze artifacts are required separately; clinical deployment is not established."
-  },
-  {
-    "repo": "icu-documentation-counts",
-    "title": "Laboratory documentation counts and retrospective recording rules",
-    "area": "Health Informatics",
-    "question": "When does a laboratory documentation count reflect recording rules rather than a distinct clinical measurement?",
-    "methods": "First-availability lab recording rules, portable raw-archive cohort construction and fixed private aggregate analyses.",
-    "access": "Credentialed eICU/MIMIC archives. Follow the original first-availability, split and local disclosure contracts.",
-    "boundary": "Recording counts are not independent biological measurements; real archive reproduction and linked disclosure review are separate gates."
-  },
-  {
-    "repo": "chronoshield-icu",
-    "title": "ChronoShield-ICU count-matched temporal evaluation",
-    "area": "Trustworthy AI",
-    "question": "Do clinical timing features add information after measurement counts are matched?",
-    "methods": "Count-matched ICU temporal views, source-derived cohort construction and staged fixed-model evaluation.",
-    "access": "Credentialed MIMIC-IV/eICU archives; keep extracted records and individual outputs private.",
-    "boundary": "Retrospective timing can reflect care processes; fresh extraction and model review gates are required."
-  },
-  {
-    "repo": "t2dm-ckd-dynamic-kidney-risk",
-    "title": "Dynamic major adverse kidney-event prediction in T2DM and CKD",
-    "area": "Prediction Modelling",
-    "question": "How does kidney-event prediction change across clinical landmarks when follow-up and cohort eligibility remain explicit?",
-    "methods": "Landmark MAKE endpoints, gated model development, competing-event sensitivities and frozen external evaluation.",
-    "access": "Credentialed MIMIC-IV and eICU source archives; use the portable path adapter where required and preserve frozen evaluation isolation.",
-    "boundary": "Unknown renal follow-up remains unknown; common-target comparisons condition on later eligibility and are not early deployable scores."
-  },
-  {
-    "repo": "clinical-observation-loss-augmentation",
-    "title": "Relative and absolute augmentation gains under observation loss",
-    "area": "AI for Health",
-    "question": "Does an augmentation gain remain meaningful when absolute predictive performance falls under observation loss?",
-    "methods": "PhysioNet source-only fitting, explicit observation masking and locked held-out augmentation comparisons.",
-    "access": "Public PhysioNet Challenge 2012 and 2019 source inputs; acquire raw files separately and retain the original source splits.",
-    "boundary": "Relative gains must be read alongside absolute performance; controlled observation loss does not establish real hospital outage behaviour.",
-    "original_domain": "Trustworthy AI",
-    "secondary_areas": [
-      "Trustworthy AI"
-    ],
-    "classification_note": "Health time-series augmentation under controlled observation loss"
-  },
-  {
-    "repo": "ehr-missingness-model-selection",
-    "title": "Source-only clinical model selection under missingness stress",
-    "area": "Trustworthy AI",
-    "question": "Do missingness stress tests change source-only model selection, or do competing rules choose the same candidate?",
-    "methods": "Credentialed source extraction, missingness-stress pilot and explicit model-selection stopping rules.",
-    "access": "Credentialed MIMIC-IV source inputs; source-only study with no claimed external benefit. No patient rows or fitted objects bundled.",
-    "boundary": "All seven source selection rules chose the same candidate; no external or source-confirmation benefit was established."
-  },
-  {
-    "repo": "objective-physiological-phenotyping",
-    "title": "Objective physiological phenotyping: Sleep-EDF module",
-    "area": "AI for Health",
-    "question": "What can objective sleep architecture reveal without turning physiological disruption into a psychiatric label?",
-    "methods": "Sleep-EDF subject-grouped staging, night architecture and training-reference descriptive disruption phenotypes.",
-    "access": "Public Sleep-EDF Expanded source archive, acquired separately. This saved implementation covers the clean-room sleep module of the multi-domain product; the NHANES and wearable module source mapping remains open.",
-    "boundary": "Sleep module only: NHANES/wearable source mapping remains open. Objective disruption does not measure subjective complaints or psychiatric diagnosis."
-  },
-  {
-    "repo": "aki-progression-transportability",
-    "title": "AKI progression: transportability and model updating",
-    "area": "Prediction Modelling",
-    "question": "What changes when an AKI progression model moves between clinical databases and requires local updating?",
-    "methods": "AKI raw-archive cohort construction, tabular/temporal models, external evaluation and local calibration/updating.",
-    "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Original records, individual predictions, original hospital identifiers and fitted weights are excluded.",
-    "boundary": "Cross-database differences and extraction scope limit transportability; retrospective updating is not prospective deployment evidence."
-  },
-  {
-    "repo": "emt-collagen-survival",
-    "title": "EMT and collagen in colon-cancer survival",
-    "area": "Prediction Modelling",
-    "question": "How do EMT and a three-gene collagen proxy compare for survival prediction in an external colon-cancer cohort?",
-    "methods": "Cohort-specific preprocessing, penalized survival models, fixed-score reconstruction and paired uncertainty.",
-    "access": "Acquire public GEO cohorts and MSigDB inputs separately under their source terms.",
-    "boundary": "An exploratory external-cohort comparison; a small uncertain concordance difference does not establish superiority, equivalence or clinical utility.",
-    "secondary_areas": [
-      "AI for Health"
-    ],
-    "classification_note": "Molecular scores evaluated for a time-to-event prediction endpoint"
-  },
-  {
-    "repo": "cross-hospital-histopathology-comparison",
-    "title": "Histopathology models across hospitals",
-    "area": "Computer Vision & Biomedical Imaging",
-    "question": "How do discrimination, probability reliability and computational cost change across hospitals for four pretrained image models?",
-    "methods": "Patient-grouped CAMELYON17-WILDS evaluation, source-only model selection, paired uncertainty and model-only timing.",
-    "access": "Acquire CAMELYON17-WILDS v1.0 and pretrained checkpoints separately.",
-    "boundary": "A fixed source-only comparison of four named ImageNet checkpoints; no universal ranking, equivalence or clinical benefit is established.",
-    "secondary_areas": [
-      "Trustworthy AI"
-    ],
-    "classification_note": "Image classification is the primary task; reliability and cost are evaluation dimensions"
-  },
-  {
-    "repo": "clinical-trial-probability-transfer",
-    "title": "Probability quality in clinical-trial inference",
-    "area": "Clinical NLP",
-    "question": "How do six small language models differ in probability quality and selective transfer under paired answer-order changes?",
-    "methods": "Frozen two-order scoring, development-fitted calibration, paired Brier contrasts and selective-risk diagnostics.",
-    "access": "Acquire pinned SemEval-2024 Task 2 inputs and authorized model revisions separately.",
-    "boundary": "Paired benchmark evidence does not establish clinical utility; exploratory post-outcome order policies do not replace the primary policy.",
-    "secondary_areas": [
-      "Trustworthy AI"
-    ],
-    "classification_note": "Clinical trial text inference is primary; selective prediction is a cross-cutting evaluation"
-  },
-  {
-    "repo": "ecg-label-budget-model-comparison",
-    "title": "ECG models under label and sampling budgets",
-    "area": "AI for Health",
-    "question": "How do ECG model comparisons change with training-label budgets, sampling rates and computational cost?",
-    "methods": "PTB-XL patient-disjoint folds, shared deterministic subsets, multi-seed model comparison and paired patient bootstrap.",
-    "access": "Acquire PTB-XL v1.0.3 directly from PhysioNet under its terms.",
-    "boundary": "A controlled retrospective multi-label benchmark; hardware-specific timing and model comparisons do not establish clinical readiness.",
-    "secondary_areas": [
-      "Prediction Modelling"
-    ],
-    "classification_note": "Physiological-signal learning is primary; this is distinct from perturbation-based ECG reliability screening"
-  },
-  {
-    "repo": "clinical-annotation-option-identity",
-    "title": "Option identity in clinical annotation software",
-    "area": "Health Informatics",
-    "question": "Does an annotation option retain its identity through display, saving, decoding and aggregation?",
-    "methods": "Pinned source witnesses, synthetic semantic transport cases and stage-by-stage identity checks.",
-    "access": "Synthetic cases and pinned public software source; original native ratings are excluded.",
-    "boundary": "Source incompatibility is distinct from historical deployment attribution; conditional native representations are not corrected clinical truth.",
-    "secondary_areas": [
-      "Trustworthy AI"
-    ],
-    "classification_note": "Annotation software semantics and interoperability are primary, rather than clinical-text model prediction"
+    "question": "How does adaptive smartwatch task acquisition compare with fixed acquisition?",
+    "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+    "access": "PADS 1.0.0 from PhysioNet, CC BY-NC-SA 4.0. Acquire source recordings separately.",
+    "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
   }
 ]

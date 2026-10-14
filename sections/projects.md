@@ -1,17 +1,14 @@
-[Home](../README.md) · [About](../sections/about.md) · [Research](../sections/research.md) · [Projects](../sections/projects.md) · [Approach](../sections/approach.md) · [Connect](../sections/connect.md)
+[Home](../README.md) · [About](about.md) · [Research](research.md) · [Projects](projects.md) · [Approach](approach.md) · [Connect](connect.md)
 
-# Explore the projects
+# Explore the selected projects
 
-**57 research projects · 6 connected directions.**
+**12 projects across six research directions.**
 
-Choose a direction to open its independent project page. Titles open the code; Guide links open the introduction.
-
-| Direction | Explore |
+| Direction | Selected projects |
 |:--|:--|
-| **[Clinical NLP](../directions/clinical-nlp.md)** · 8 projects | Clinical and biomedical language sit at the centre of this direction, alongside reading and rationale benchmarks that help examine how language models behave. |
-| **[Computer Vision & Biomedical Imaging](../directions/biomedical-imaging.md)** · 6 projects | Medical image classification and MRI reconstruction, with explicit attention to patient separation, reliability and what an image model actually measures. |
-| **[Trustworthy AI](../directions/trustworthy-ai.md)** · 11 projects | A strong headline metric is only the beginning. These projects examine calibration, sample reuse, source information and fragile evaluation choices. |
-| **[Prediction Modelling](../directions/prediction-modelling.md)** · 13 projects | Clinical and molecular prediction across time, hospitals and cohorts. The endpoint, evaluation design and uncertainty stay visible. |
-| **[Health Informatics](../directions/health-informatics.md)** · 10 projects | How we collect and record data is part of the story. These workflows connect clinical measurement, population surveys, surveillance and access to care. |
-| **[AI for Health](../directions/ai-for-health.md)** · 9 projects | From molecular variation to sleep and movement, I build tools to explore health questions across different scales. |
-
+| **[Clinical NLP](../directions/clinical-nlp.md)** · 3 projects | [Social and behavioural determinants from clinical text](https://github.com/terry0809000/MIMIC_SBDH)<br>[Cross-corpus abstract classification](https://github.com/terry0809000/biomedical-abstract-sentence-classification)<br>[Beyond Macro-F1](https://github.com/terry0809000/beyond-macro-f1-pubmed-rct-public) |
+| **[Computer Vision](../directions/biomedical-imaging.md)** · 2 projects | [Selective skin-lesion referral](https://github.com/terry0809000/ham10000-trustworthy-skin-ai)<br>[MRI and clinical prediction of pathological complete response](https://github.com/terry0809000/breast-mri-response-prediction) |
+| **[Trustworthy AI](../directions/trustworthy-ai.md)** · 2 projects | [Measurement-aware ICU prediction](https://github.com/terry0809000/icu-measurement-aware-prediction)<br>[Clinical prediction uncertainty and identification](https://github.com/terry0809000/clinical-uncertainty-identification) |
+| **[Prediction Modelling](../directions/prediction-modelling.md)** · 1 project | [Dynamic AKI prediction](https://github.com/terry0809000/aki-dynamic-prediction-deployment-gated) |
+| **[Health Informatics](../directions/health-informatics.md)** · 2 projects | [Six-hour ICU laboratory prediction](https://github.com/terry0809000/icu-six-hour-lab-prediction)<br>[Eating disorder dynamics across everyday moments](https://github.com/terry0809000/eatingdisordermlvar) |
+| **[AI for Health](../directions/ai-for-health.md)** · 2 projects | [Sleep-EDF staging](https://github.com/terry0809000/sleepingedf)<br>[Adaptive versus fixed smartwatch task acquisition](https://github.com/terry0809000/pads-adaptive-acquisition) |
