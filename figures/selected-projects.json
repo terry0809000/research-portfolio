@@ -1,0 +1,177 @@
+{
+  "categories": [
+    {
+      "slug": "clinical-nlp",
+      "name": "Clinical NLP",
+      "repositories": [
+        "MIMIC_SBDH",
+        "biomedical-abstract-sentence-classification",
+        "beyond-macro-f1-pubmed-rct-public"
+      ]
+    },
+    {
+      "slug": "biomedical-imaging",
+      "name": "Computer Vision",
+      "repositories": [
+        "ham10000-trustworthy-skin-ai",
+        "breast-mri-response-prediction"
+      ]
+    },
+    {
+      "slug": "trustworthy-ai",
+      "name": "Trustworthy AI",
+      "repositories": [
+        "icu-measurement-aware-prediction",
+        "clinical-uncertainty-identification"
+      ]
+    },
+    {
+      "slug": "prediction-modelling",
+      "name": "Prediction Modelling",
+      "repositories": [
+        "aki-dynamic-prediction-deployment-gated"
+      ]
+    },
+    {
+      "slug": "health-informatics",
+      "name": "Health Informatics",
+      "repositories": [
+        "icu-six-hour-lab-prediction",
+        "eatingdisordermlvar"
+      ]
+    },
+    {
+      "slug": "ai-for-health",
+      "name": "AI for Health",
+      "repositories": [
+        "sleepingedf",
+        "pads-adaptive-acquisition"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "repo": "MIMIC_SBDH",
+      "title": "Social and behavioural determinants from clinical text",
+      "area": "Clinical NLP",
+      "question": "How do conventional and transformer models compare for SBDH classification?",
+      "methods": "Clinical-text preparation, TF-IDF baselines, frozen embeddings, fine-tuning and benchmark evaluation.",
+      "access": "Authorized MIMIC-III text / MIMIC-SBDH annotations",
+      "boundary": "Access-controlled clinical text must remain in an authorized environment."
+    },
+    {
+      "repo": "biomedical-abstract-sentence-classification",
+      "title": "Cross-corpus abstract classification",
+      "area": "Clinical NLP",
+      "question": "How do lightweight sentence classifiers transfer between corpora?",
+      "methods": "Split-aware preprocessing, calibration and cross-corpus evaluation.",
+      "access": "CPU · public text corpora",
+      "boundary": "Read version-specific evidence; the local revision can be newer than the public release.",
+      "original_domain": "Biomedical NLP"
+    },
+    {
+      "repo": "beyond-macro-f1-pubmed-rct-public",
+      "title": "Beyond Macro-F1",
+      "area": "Clinical NLP",
+      "question": "Does better classification imply better calibration and perturbation consistency?",
+      "methods": "Sanitized benchmark code, result provenance and versioned evidence.",
+      "access": "Public code + versioned evidence",
+      "boundary": "A benchmark comparison does not establish clinical utility.",
+      "secondary_areas": [
+        "Trustworthy AI"
+      ],
+      "classification_note": "Biomedical text classification and calibration",
+      "original_domain": "Biomedical NLP"
+    },
+    {
+      "repo": "ham10000-trustworthy-skin-ai",
+      "title": "Selective skin-lesion referral",
+      "area": "Computer Vision",
+      "question": "How do calibration and abstention change model evaluation?",
+      "methods": "Lesion-level splitting, temperature scaling, risk–coverage analysis and subgroup audits.",
+      "access": "Python · acquire source images",
+      "boundary": "Related-domain checks do not constitute prospective clinical validation.",
+      "original_domain": "Medical imaging"
+    },
+    {
+      "repo": "breast-mri-response-prediction",
+      "title": "MRI and clinical prediction of pathological complete response",
+      "area": "Computer Vision",
+      "question": "What can MRI and clinical information tell us about pathological complete response?",
+      "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+      "access": "Acquire I-SPY1/I-SPY2 source images, clinical data and outcome files under their original terms.",
+      "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply.",
+      "original_domain": "Biomedical Imaging"
+    },
+    {
+      "repo": "icu-measurement-aware-prediction",
+      "title": "Measurement-aware ICU prediction",
+      "area": "Trustworthy AI",
+      "question": "How do measurement patterns affect retrospective ICU prediction?",
+      "methods": "Preserved scientific implementation, source-specific command reference, dependency specifications and input contract.",
+      "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0. Set ICU_RAW_ROOT and ICU_EXTRACT_ROOT locally; generated rows and models remain private.",
+      "boundary": "Existing source release; no experiments or independent reproduction were run during this upload. Original data and saved-artifact prerequisites apply.",
+      "secondary_areas": [
+        "Prediction Modelling"
+      ],
+      "classification_note": "Clinical measurement processes and retrospective EHR prediction",
+      "original_domain": "Prediction Modelling"
+    },
+    {
+      "repo": "clinical-uncertainty-identification",
+      "title": "Clinical prediction uncertainty and identification",
+      "area": "Trustworthy AI",
+      "question": "Which clinical prediction conclusions can the available evidence identify?",
+      "methods": "Exact rational identification checks, bounded correction and explicitly synthetic audit simulations.",
+      "access": "Analytical examples and explicitly synthetic simulations; no patient dataset required for the analytical checks.",
+      "boundary": "Stipulated simulation assumptions and computational checks do not establish clinical effectiveness."
+    },
+    {
+      "repo": "aki-dynamic-prediction-deployment-gated",
+      "title": "Dynamic AKI prediction",
+      "area": "Prediction Modelling",
+      "question": "How do temporal renal models behave under external transport?",
+      "methods": "Dynamic prediction, alert thresholds and deployment constraints.",
+      "access": "Credentialed clinical data",
+      "boundary": "Discrimination, calibration and patient benefit are distinct questions.",
+      "original_domain": "Clinical prediction"
+    },
+    {
+      "repo": "icu-six-hour-lab-prediction",
+      "title": "Six-hour ICU laboratory prediction",
+      "area": "Health Informatics",
+      "question": "What can routinely collected intensive care data tell us about laboratory measurements six hours ahead?",
+      "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+      "access": "Credentialed MIMIC-IV 3.1 and eICU 2.0; extraction paths must point to your authorized archives.",
+      "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    },
+    {
+      "repo": "eatingdisordermlvar",
+      "title": "Eating disorder dynamics across everyday moments",
+      "area": "Health Informatics",
+      "question": "How do eating-related symptoms, affect and maladaptive exercise connect across EMA surveys?",
+      "methods": "R workflow comparing base and additive contemporaneous and temporal networks, with same-participant and same-day survey lags.",
+      "access": "Authorized EMA CSV · R",
+      "boundary": "Associational networks in exercise-target observations; not causal effects or individual diagnosis."
+    },
+    {
+      "repo": "sleepingedf",
+      "title": "Sleep-EDF staging",
+      "area": "AI for Health",
+      "question": "How do local context, channel choice and smoothing affect sleep staging?",
+      "methods": "Record-aware evaluation, channel ablations and repeated-seed comparisons.",
+      "access": "Acquire Sleep-EDF",
+      "boundary": "Sequence smoothing can trade off different metrics; preserve record boundaries.",
+      "original_domain": "Physiological signals"
+    },
+    {
+      "repo": "pads-adaptive-acquisition",
+      "title": "Adaptive versus fixed smartwatch task acquisition",
+      "area": "AI for Health",
+      "question": "How does adaptive smartwatch task acquisition compare with fixed acquisition?",
+      "methods": "Preserved analysis code, source-specific pipeline guide and original execution notes.",
+      "access": "PADS 1.0.0 from PhysioNet, CC BY-NC-SA 4.0. Acquire source recordings separately.",
+      "boundary": "Source release; no experiments or independent reproduction were run during this upload. Original input and saved-artifact prerequisites apply."
+    }
+  ]
+}
